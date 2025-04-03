@@ -32,8 +32,8 @@ Before running the application, ensure you have:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ollama-chat-app.git
-   cd ollama-chat-app
+   git clone https://github.com/ritigit7/Chat-with-all.git
+   cd Chat-with-all
    ```
 
 2. Create and activate a virtual environment:
@@ -72,6 +72,8 @@ Before running the application, ensure you have:
    - Type your questions in the chat input
    - View the conversation history
    - Responses will be streamed in real-time
+  
+
 
 ## Supported Data Sources
 
