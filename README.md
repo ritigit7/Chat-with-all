@@ -73,7 +73,10 @@ Before running the application, ensure you have:
    - View the conversation history
    - Responses will be streamed in real-time
   
-![Chat-With-All](images/WhatsApp Image 2025-03-29 at 12.55.47 AM (1).jpeg)
+![Chat-With-All](https://github.com/ritigit7/Chat-with-all/blob/main/images/WhatsApp%20Image%202025-03-29%20at%2012.55.47%20AM%20(1).jpeg)
+![Chat-With-All](https://github.com/ritigit7/Chat-with-all/blob/main/images/WhatsApp%20Image%202025-03-29%20at%2012.55.47%20AM%20(2).jpeg)
+![Chat-With-All](https://github.com/ritigit7/Chat-with-all/blob/main/images/WhatsApp%20Image%202025-03-29%20at%2012.55.47%20AM%20(3).jpeg)
+![Chat-With-All](https://github.com/ritigit7/Chat-with-all/blob/main/images/WhatsApp%20Image%202025-03-29%20at%2012.55.47%20AM%20.jpeg)
 
 ## Supported Data Sources
 
