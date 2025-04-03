@@ -73,7 +73,7 @@ Before running the application, ensure you have:
    - View the conversation history
    - Responses will be streamed in real-time
   
-
+![Chat-With-All](images/WhatsApp Image 2025-03-29 at 12.55.47 AM (1).jpeg)
 
 ## Supported Data Sources
 
