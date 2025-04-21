@@ -10,6 +10,7 @@ A full-featured chat application that allows you to interact with various AI mod
 - 🧠 Conversation memory and context retention
 - 📊 Database querying capabilities
 - 📄 Document processing (PDF, Word)
+- 📚 Images processing
 - 🌐 Website content extraction
 - 🔍 Wikipedia integration
 - 🎨 Modern, responsive UI
@@ -29,8 +30,7 @@ A full-featured chat application that allows you to interact with various AI mod
 
 - **Frontend**: HTML5, CSS3, JavaScript, Bootstrap 5
 - **Backend**: Python, Flask
-- **AI Models**: Ollama (llama3, gemma, phi3, qwen)
-- **Database**: SQLite
+- **AI Models**: Ollama (llama3.2, gemma3, phi3, qwen)
 - **Document Processing**: PyPDF2, python-docx
 - **Web Scraping**: BeautifulSoup
 - **Vector Storage**: FAISS
@@ -41,17 +41,16 @@ A full-featured chat application that allows you to interact with various AI mod
 Before you begin, ensure you have met the following requirements:
 
 - Python 3.8 or higher
-- Ollama installed and running locally ([installation instructions](https://ollama.ai/))
+- Ollama installed and running locally ([installation instructions](http://localhost:11434/v1)
 - Required Python packages (listed in requirements.txt)
-- Node.js (for optional frontend development)
 
 ## Installation
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/ollama-ai-chat.git
-cd ollama-ai-chat
+git clone https://github.com/ritigit7/Chat-with-all.git
+cd Chat-with-all
 ```
 
 ### 2. Set up Python environment
@@ -112,7 +111,7 @@ http://localhost:5000
 
 ### Using the Application
 
-1. **Select a Model**: Choose from the available Ollama models in the sidebar.
+1. **Select a Model**: Choose from the available Ollama models in the sidebar, If you want to use Image Chat part then use gemma3 because this is multimodel.
 2. **Choose a Source Type**: Select what you want to chat with (direct chat, documents, websites, etc.).
 3. **Configure the Source**: Follow the setup instructions for your selected source type.
 4. **Start Chatting**: Type your message in the input box and press Enter or click Send.
@@ -209,4 +208,3 @@ For questions or support, please contact:
 
 Your Name - your.email@example.com  
 Project Link: [https://github.com/ritigit7/Chat-with-all](https://github.com/ritigit7/Chat-with-all)
-```
