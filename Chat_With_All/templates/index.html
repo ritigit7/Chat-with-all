@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ollama AI Chat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary: #4ccf64; /* WhatsApp green */
+            --primary-light: #dcf8c6;
+            --primary-dark: #128C7E;
+            --secondary: #34B7F1;
+            --secondary-light: #e5f6fd;
+            --secondary-dark: #075E54;
+            --dark: #0e0d0d; /* Dark background */
+            --darker: #0b141a; /* Even darker */
+            --light: #f0f2f5;
+            --light-gray: #e9edef;
+            --medium-gray: #8696a0;
+            --white: #ffffff;
+            --success: #25D366;
+            --error: #ff3b30;
+            --warning: #ffcc00;
+            --info: #34B7F1;
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 10px 15px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 20px 25px rgba(0, 0, 0, 0.1);
+            --border-radius: 8px;
+            --border-radius-lg: 12px;
+            --border-radius-sm: 6px;
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--darker);
+            color: var(--light);
+            line-height: 1.6;
+        }
+
+        .app-container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 280px;
+            background-color: var(--dark);
+            border-right: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-header {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .sidebar-header h2 {
+            color: var(--white);
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            font-size: 1.25rem;
+        }
+
+        .sidebar-header h2 i {
+            margin-right: 0.75rem;
+            color: var(--primary);
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-label {
+            color: var(--medium-gray);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            display: block;
+            font-size: 0.85rem;
+        }
+
+        .form-control,
+        .form-select {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            border-radius: var(--border-radius-sm);
+            padding: 0.5rem 0.75rem;
+            width: 100%;
+            transition: var(--transition);
+            font-size: 0.9rem;
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            background-color: rgba(255, 255, 255, 0.08);
+            border-color: var(--primary);
+            color: var(--white);
+            box-shadow: 0 0 0 0.2rem rgba(37, 211, 102, 0.15);
+        }
+
+        /* Tabs */
+        .nav-tabs {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .nav-tabs .nav-link {
+            color: var(--medium-gray);
+            border: none;
+            padding: 0.5rem 0.75rem;
+            font-weight: 500;
+            font-size: 0.85rem;
+            transition: var(--transition);
+        }
+
+        .nav-tabs .nav-link.active {
+            color: var(--primary);
+            background-color: transparent;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .nav-tabs .nav-link:hover:not(.active) {
+            color: var(--white);
+        }
+
+        /* Status indicators */
+        .status-indicator {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 0.5rem;
+            border-radius: 50rem;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        .status-active {
+            background-color: rgba(37, 211, 102, 0.15);
+            color: var(--success);
+        }
+
+        .status-inactive {
+            background-color: rgba(255, 59, 48, 0.15);
+            color: var(--error);
+        }
+
+        .status-pending {
+            background-color: rgba(255, 204, 0, 0.15);
+            color: var(--warning);
+        }
+
+        /* Buttons */
+        .btn {
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius-sm);
+            transition: var(--transition);
+            font-size: 0.85rem;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            border-color: var(--primary-dark);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-secondary {
+            background-color: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.15);
+            color: var(--white);
+        }
+
+        .btn-outline-primary {
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .btn-outline-primary:hover {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        /* Main chat area */
+        .chat-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background-color: var(--dark);
+            position: relative;
+            height: 100vh;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%231a2a33' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+
+        .chat-header {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--dark);
+            z-index: 10;
+        }
+
+        .chat-header h3 {
+            margin: 0;
+            font-weight: 600;
+            color: var(--white);
+            font-size: 1.1rem;
+        }
+
+        .chat-messages {
+            flex: 1;
+            padding: 1rem 1.5rem;
+            overflow-y: auto;
+            height: calc(100vh - 140px);
+            scrollbar-width: thin;
+            scrollbar-color: var(--primary) rgba(255, 255, 255, 0.05);
+        }
+
+        .chat-messages::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .chat-messages::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 3px;
+        }
+
+        .chat-messages::-webkit-scrollbar-thumb {
+            background-color: var(--primary);
+            border-radius: 3px;
+        }
+
+        .message-container {
+            display: flex;
+            margin-bottom: 1rem;
+            position: relative;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .user-message-container {
+            justify-content: flex-end;
+        }
+
+        .assistant-message-container {
+            justify-content: flex-start;
+        }
+
+        .message {
+            max-width: 70%;
+            padding: 0.75rem 1rem;
+            border-radius: var(--border-radius);
+            position: relative;
+            word-wrap: break-word;
+            line-height: 1.4;
+        }
+
+        .user-message {
+            background-color: var(--primary-dark);
+            color: var(--white);
+            border-top-right-radius: 0;
+            margin-left: 20%;
+        }
+
+        .assistant-message {
+            background-color: rgba(255, 255, 255, 0.08);
+            border-top-left-radius: 0;
+            margin-right: 20%;
+        }
+
+        .system-message {
+            background-color: rgba(37, 211, 102, 0.1);
+            color: var(--success);
+            margin: 0 auto 1rem;
+            text-align: center;
+            max-width: 80%;
+            font-size: 0.85rem;
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+        }
+
+        .error-message {
+            background-color: rgba(255, 59, 48, 0.1);
+            color: var(--error);
+            margin: 0 auto 1rem;
+            text-align: center;
+            max-width: 80%;
+            font-size: 0.85rem;
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+        }
+
+        .message-time {
+            font-size: 0.65rem;
+            opacity: 0.7;
+            margin-top: 0.25rem;
+            text-align: right;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .message-name {
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            color: var(--primary);
+        }
+
+        .chat-input-container {
+            position: sticky;
+            bottom: 0;
+            padding: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            background-color: var(--dark);
+            z-index: 10;
+        }
+
+        .chat-input {
+            display: flex;
+            gap: 0.75rem;
+            align-items: flex-end;
+        }
+
+        .chat-input textarea {
+            flex: 1;
+            background-color: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            border-radius: var(--border-radius);
+            padding: 0.75rem 1rem;
+            resize: none;
+            min-height: 50px;
+            max-height: 120px;
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+
+        .chat-input textarea:focus {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: var(--primary);
+            box-shadow: 0 0 0 0.2rem rgba(37, 211, 102, 0.15);
+            outline: none;
+        }
+
+        .send-button {
+            background-color: var(--primary);
+            color: var(--white);
+            border: none;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+            flex-shrink: 0;
+        }
+
+        .send-button:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-1px);
+        }
+
+        .send-button:disabled {
+            background-color: var(--medium-gray);
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* File inputs */
+        .file-input-container {
+            position: relative;
+            margin-top: 0.5rem;
+        }
+
+        .file-input-label {
+            display: block;
+            padding: 0.5rem 0.75rem;
+            background-color: rgba(255, 255, 255, 0.08);
+            border: 1px dashed rgba(255, 255, 255, 0.2);
+            border-radius: var(--border-radius-sm);
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.85rem;
+        }
+
+        .file-input-label:hover {
+            background-color: rgba(255, 255, 255, 0.12);
+            border-color: var(--primary);
+        }
+
+        .file-input {
+            position: absolute;
+            width: 0.1px;
+            height: 0.1px;
+            opacity: 0;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .image-preview {
+            max-width: 100%;
+            max-height: 200px;
+            border-radius: var(--border-radius-sm);
+            margin-top: 0.5rem;
+            display: none;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Pre-formatted content (code blocks) */
+        .pre-formatted {
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: var(--border-radius-sm);
+            padding: 0.75rem;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.85rem;
+            white-space: pre-wrap;
+            margin: 0.5rem 0;
+            overflow-x: auto;
+            line-height: 1.4;
+        }
+
+        /* Source setup sections */
+        .source-setup {
+            padding: 1rem;
+            background-color: rgba(255, 255, 255, 0.03);
+            border-radius: var(--border-radius-sm);
+            margin-bottom: 1rem;
+        }
+
+        .source-setup p {
+            color: var(--medium-gray);
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        /* Loading spinner */
+        .spinner {
+            width: 1.25rem;
+            height: 1.25rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: var(--white);
+            animation: spin 1s ease-in-out infinite;
+            display: inline-block;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Message status indicators */
+        .message-status {
+            font-size: 0.6rem;
+            margin-left: 0.5rem;
+            opacity: 0.7;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+            .app-container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .sidebar {
+                padding: 1rem;
+            }
+
+            .chat-header,
+            .chat-messages {
+                padding: 0.75rem;
+            }
+
+            .message {
+                max-width: 85%;
+            }
+
+            .user-message {
+                margin-left: 15%;
+            }
+
+            .assistant-message {
+                margin-right: 15%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2><i class="bi bi-robot"></i> Ollama AI</h2>
+            </div>
+
+            <div class="form-group">
+                <label for="session-id" class="form-label">Session ID</label>
+                <input type="text" id="session-id" class="form-control" readonly>
+                <button class="btn btn-secondary w-100 mt-2" id="new-session-btn">
+                    <i class="bi bi-plus-circle"></i> New Session
+                </button>
+            </div>
+
+            <div class="form-group">
+                <label for="model-select" class="form-label">Model</label>
+                <select id="model-select" class="form-select">
+                    <option style="color: black;" value="llama3">llama3 (default)</option>
+                    <option style="color: black;" value="gemma">gemma</option>
+                    <option style="color: black;" value="phi3">phi3</option>
+                    <option style="color: black;" value="qwen">qwen</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="source-select" class="form-label">Source Type</label>
+                <select id="source-select" class="form-select dropdown-menu-style">
+                    <option style="color: black;" value="Direct Chat">Direct Chat</option>
+                    <option style="color: black;" value="Wikipedia">Wikipedia</option>
+                    <option style="color: black;" value="Database">Database</option>
+                    <option style="color: black;" value="PDF Document">PDF Document</option>
+                    <option style="color: black;" value="Word Document">Word Document</option>
+                    <option style="color: black;" value="Website">Website</option>
+                </select>
+            </div>
+
+            <ul class="nav nav-tabs mt-2" id="sourceTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="setup-tab" data-bs-toggle="tab" data-bs-target="#setup"
+                        type="button">
+                        <i class="bi bi-gear"></i> Setup
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="files-tab" data-bs-toggle="tab" data-bs-target="#files" type="button">
+                        <i class="bi bi-files"></i> Files
+                    </button>
+                </li>
+            </ul>
+
+            <div class="tab-content mt-2" id="sourceTabContent">
+                <div class="tab-pane fade show active" id="setup" role="tabpanel">
+                    <!-- Direct Chat Setup -->
+                    <div id="direct-chat-setup" class="source-setup">
+                        <p>Chat directly with the selected AI model.</p>
+                        <span id="direct-chat-status" class="status-indicator status-active">Ready</span>
+                    </div>
+
+                    <!-- Wikipedia Setup -->
+                    <div id="wikipedia-setup" class="source-setup" style="display: none;">
+                        <p>Initialize Wikipedia agent to query Wikipedia content.</p>
+                        <button class="btn btn-primary" id="init-wikipedia-btn">
+                            <i class="bi bi-wikipedia"></i> Initialize
+                        </button>
+                        <span id="wikipedia-status" class="status-indicator status-inactive">Not Initialized</span>
+                    </div>
+
+                    <!-- Database Setup -->
+                    <div id="database-setup" class="source-setup" style="display: none;">
+                        <p>Connect to a SQLite database file.</p>
+                        <label for="db-file" class="file-input-label">
+                            <i class="bi bi-database"></i> Select Database File
+                        </label>
+                        <input type="file" id="db-file" class="file-input" accept=".db,.sqlite,.sqlite3">
+                        <button class="btn btn-primary mt-2" id="init-database-btn">
+                            <i class="bi bi-plug"></i> Connect
+                        </button>
+                        <span id="database-status" class="status-indicator status-inactive">Not Connected</span>
+                    </div>
+
+                    <!-- PDF Setup -->
+                    <div id="pdf-setup" class="source-setup" style="display: none;">
+                        <p>Upload a PDF document to chat with its content.</p>
+                        <label for="pdf-file" class="file-input-label">
+                            <i class="bi bi-file-earmark-pdf"></i> Select PDF File
+                        </label>
+                        <input type="file" id="pdf-file" class="file-input" accept=".pdf">
+                        <button class="btn btn-primary mt-2" id="process-pdf-btn">
+                            <i class="bi bi-upload"></i> Process
+                        </button>
+                        <span id="pdf-status" class="status-indicator status-inactive">No PDF Loaded</span>
+                    </div>
+
+                    <!-- Word Doc Setup -->
+                    <div id="word-setup" class="source-setup" style="display: none;">
+                        <p>Upload a Word document to chat with its content.</p>
+                        <label for="word-file" class="file-input-label">
+                            <i class="bi bi-file-earmark-word"></i> Select Word File
+                        </label>
+                        <input type="file" id="word-file" class="file-input" accept=".docx">
+                        <button class="btn btn-primary mt-2" id="process-word-btn">
+                            <i class="bi bi-upload"></i> Process
+                        </button>
+                        <span id="word-status" class="status-indicator status-inactive">No Document Loaded</span>
+                    </div>
+
+                    <!-- Website Setup -->
+                    <div id="website-setup" class="source-setup" style="display: none;">
+                        <p>Enter a website URL to chat with its content.</p>
+                        <input type="text" id="website-url" class="form-control mb-2" placeholder="https://example.com">
+                        <button class="btn btn-primary" id="process-website-btn">
+                            <i class="bi bi-globe"></i> Process
+                        </button>
+                        <span id="website-status" class="status-indicator status-inactive">No Website Loaded</span>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="files" role="tabpanel">
+                    <div class="source-setup">
+                        <label class="form-label">Image Upload (Multimodal)</label>
+                        <label for="image-file" class="file-input-label">
+                            <i class="bi bi-image"></i> Select Image
+                        </label>
+                        <input type="file" id="image-file" class="file-input" accept="image/*">
+                        <img id="image-preview" class="image-preview mt-2">
+
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <button class="btn btn-secondary w-100" id="clear-chat-btn">
+                        <i class="bi bi-trash"></i> Clear Chat
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Chat Area -->
+        <div class="chat-container">
+            <div class="chat-header">
+                <h3 id="chat-title">Chat</h3>
+                <span id="source-status" class="status-indicator status-active">Ready</span>
+            </div>
+
+            <div class="chat-messages" id="chat-messages">
+                <div class="system-message">
+                    Welcome to Ollama AI Chat! Select a source type from the sidebar to begin.
+                </div>
+            </div>
+
+            <div class="chat-input-container">
+                <div class="chat-input">
+                    <textarea id="message-input" placeholder="Type your message here..." rows="1"></textarea>
+                    <button id="send-btn" class="send-button" disabled>
+                        <i class="bi bi-send"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Global variables
+        let currentSessionId = '';
+        let currentModel = 'llama3';
+        let currentSource = 'Direct Chat';
+        let imageFile = null;
+        let isProcessing = false;
+
+        // Initialize the application
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize session
+            initSession();
+
+            // Set up event listeners
+            setupEventListeners();
+
+            // Load models from backend
+            fetchModels();
+
+            // Auto-resize textarea
+            const textarea = document.getElementById('message-input');
+            textarea.addEventListener('input', function () {
+                this.style.height = 'auto';
+                this.style.height = (this.scrollHeight) + 'px';
+                document.getElementById('send-btn').disabled = this.value.trim() === '' && !imageFile;
+            });
+        });
+
+        // Initialize a new session
+        function initSession() {
+            isProcessing = true;
+            updateSendButton();
+
+            fetch('/api/init_session', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({})
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        currentSessionId = data.session_id;
+                        document.getElementById('session-id').value = currentSessionId;
+                        currentModel = data.model || 'llama3';
+                        currentSource = data.source || 'Direct Chat';
+
+                        // Update UI to reflect current model and source
+                        document.getElementById('model-select').value = currentModel;
+                        document.getElementById('source-select').value = currentSource;
+                        updateSourceUI(currentSource);
+
+                        // Load chat history
+                        loadChatHistory();
+
+                        showSystemMessage('New session created. Ready to chat!');
+                    } else {
+                        showErrorMessage('Failed to initialize session: ' + (data.message || 'Unknown error'));
+                    }
+
+                    isProcessing = false;
+                    updateSendButton();
+                })
+                .catch(error => {
+                    console.error('Error initializing session:', error);
+                    showErrorMessage('Error initializing session: ' + error.message);
+                    isProcessing = false;
+                    updateSendButton();
+                });
+        }
+
+        // Set up all event listeners
+        function setupEventListeners() {
+            // New session button
+            document.getElementById('new-session-btn').addEventListener('click', initSession);
+
+            // Model selection
+            document.getElementById('model-select').addEventListener('change', function () {
+                const newModel = this.value;
+                updateModel(newModel);
+            });
+
+            // Source selection
+            document.getElementById('source-select').addEventListener('change', function () {
+                const newSource = this.value;
+                updateSource(newSource);
+            });
+
+            // Wikipedia initialization
+            document.getElementById('init-wikipedia-btn').addEventListener('click', initWikipedia);
+
+            // Database initialization
+            document.getElementById('init-database-btn').addEventListener('click', initDatabase);
+
+            // PDF processing
+            document.getElementById('process-pdf-btn').addEventListener('click', processPDF);
+
+            // Word document processing
+            document.getElementById('process-word-btn').addEventListener('click', processWord);
+
+            // Website processing
+            document.getElementById('process-website-btn').addEventListener('click', processWebsite);
+
+            // Image file selection
+            document.getElementById('image-file').addEventListener('change', handleImageUpload);
+
+            // Clear chat button
+            document.getElementById('clear-chat-btn').addEventListener('click', clearChat);
+
+            // Send message button
+            document.getElementById('send-btn').addEventListener('click', sendMessage);
+
+            // Allow sending message with Enter key (but not Shift+Enter)
+            document.getElementById('message-input').addEventListener('keydown', function (e) {
+                if (e.key === 'Enter' && !e.shiftKey && !isProcessing) {
+                    e.preventDefault();
+                    sendMessage();
+                }
+            });
+        }
+
+        // Scroll to bottom of chat
+        function scrollToBottom() {
+            const messagesContainer = document.getElementById('chat-messages');
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+
+        // Fetch available models from backend
+        function fetchModels() {
+            fetch('/api/models')
+                .then(response => response.json())
+                .then(models => {
+                    const select = document.getElementById('model-select');
+                    // Keep the current selection
+                    const currentValue = select.value;
+
+                    // Clear existing options
+                    select.innerHTML = '';
+
+                    // Add new options
+                    models.forEach(model => {
+                        const option = document.createElement('option');
+                        option.value = model;
+                        option.textContent = model;
+                        select.appendChild(option);
+                    });
+
+                    // Restore the previous selection if it still exists
+                    if (models.includes(currentValue)) {
+                        select.value = currentValue;
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching models:', error);
+                });
+        }
+
+        // Update the model in use
+        function updateModel(newModel) {
+            isProcessing = true;
+            updateSendButton();
+
+            fetch('/api/set_model', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    session_id: currentSessionId,
+                    model: newModel
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        currentModel = newModel;
+                        showSystemMessage(`Model changed to ${newModel}`);
+                    } else {
+                        showErrorMessage('Failed to update model: ' + (data.message || 'Unknown error'));
+                        // Revert to previous model in UI
+                        document.getElementById('model-select').value = currentModel;
+                    }
+
+                    isProcessing = false;
+                    updateSendButton();
+                })
+                .catch(error => {
+                    console.error('Error updating model:', error);
+                    showErrorMessage('Error updating model: ' + error.message);
+                    // Revert to previous model in UI
+                    document.getElementById('model-select').value = currentModel;
+                    isProcessing = false;
+                    updateSendButton();
+                });
+        }
+
+        // Update the source in use
+        function updateSource(newSource) {
+            isProcessing = true;
+            updateSendButton();
+
+            fetch('/api/set_source', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    session_id: currentSessionId,
+                    source: newSource
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        currentSource = newSource;
+                        updateSourceUI(newSource);
+                        updateSourceStatus();
+                        showSystemMessage(`Source changed to ${newSource}`);
+                    } else {
+                        showErrorMessage('Failed to update source: ' + (data.message || 'Unknown error'));
+                        // Revert to previous source in UI
+                        document.getElementById('source-select').value = currentSource;
+                    }
+
+                    isProcessing = false;
+                    updateSendButton();
+                })
+                .catch(error => {
+                    console.error('Error updating source:', error);
+                    showErrorMessage('Error updating source: ' + error.message);
+                    // Revert to previous source in UI
+                    document.getElementById('source-select').value = currentSource;
+                    isProcessing = false;
+                    updateSendButton();
+                });
+        }
+
+        // Update the UI to show/hide source-specific controls
+        function updateSourceUI(source) {
+            // Hide all setup sections
+            document.getElementById('direct-chat-setup').style.display = 'none';
+            document.getElementById('wikipedia-setup').style.display = 'none';
+            document.getElementById('database-setup').style.display = 'none';
+            document.getElementById('pdf-setup').style.display = 'none';
+            document.getElementById('word-setup').style.display = 'none';
+            document.getElementById('website-setup').style.display = 'none';
+
+            // Show the appropriate setup section
+            switch (source) {
+                case 'Direct Chat':
+                    document.getElementById('direct-chat-setup').style.display = 'block';
+                    break;
+                case 'Wikipedia':
+                    document.getElementById('wikipedia-setup').style.display = 'block';
+                    break;
+                case 'Database':
+                    document.getElementById('database-setup').style.display = 'block';
+                    break;
+                case 'PDF Document':
+                    document.getElementById('pdf-setup').style.display = 'block';
+                    break;
+                case 'Word Document':
+                    document.getElementById('word-setup').style.display = 'block';
+                    break;
+                case 'Website':
+                    document.getElementById('website-setup').style.display = 'block';
+                    break;
+            }
+
+            // Update chat title
+            document.getElementById('chat-title').textContent = `${source} Chat`;
+        }
+
+        // Update the source status indicator
+        function updateSourceStatus() {
+            const statusElement = document.getElementById('source-status');
+
+            switch (currentSource) {
+                case 'Direct Chat':
+                    statusElement.textContent = 'Ready';
+                    statusElement.className = 'status-indicator status-active';
+                    break;
+                case 'Wikipedia':
+                    // We don't know if Wikipedia is initialized, would need to check with backend
+                    statusElement.textContent = 'Status Unknown';
+                    statusElement.className = 'status-indicator';
+                    break;
+                case 'Database':
+                    statusElement.textContent = 'Not Connected';
+                    statusElement.className = 'status-indicator status-inactive';
+                    break;
+                case 'PDF Document':
+                    statusElement.textContent = 'No PDF Loaded';
+                    statusElement.className = 'status-indicator status-inactive';
+                    break;
+                case 'Word Document':
+                    statusElement.textContent = 'No Document Loaded';
+                    statusElement.className = 'status-indicator status-inactive';
+                    break;
+                case 'Website':
+                    statusElement.textContent = 'No Website Loaded';
+                    statusElement.className = 'status-indicator status-inactive';
+                    break;
+            }
+        }
+
+        // Initialize Wikipedia agent
+        function initWikipedia() {
+            isProcessing = true;
+            updateSendButton();
+
+            document.getElementById('wikipedia-status').textContent = 'Initializing...';
+            document.getElementById('wikipedia-status').className = 'status-indicator status-pending';
+
+            fetch('/api/init_wikipedia', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    session_id: currentSessionId
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        document.getElementById('wikipedia-status').textContent = 'Initialized';
+                        document.getElementById('wikipedia-status').className = 'status-indicator status-active';
+                        document.getElementById('source-status').textContent = 'Ready';
+                        document.getElementById('source-status').className = 'status-indicator status-active';
+                        showSystemMessage('Wikipedia agent initialized successfully');
+                    } else {
+                        document.getElementById('wikipedia-status').textContent = 'Error';
+                        document.getElementById('wikipedia-status').className = 'status-indicator status-inactive';
+                        showErrorMessage(data.message || 'Failed to initialize Wikipedia agent');
+                    }
+
+                    isProcessing = false;
+                    updateSendButton();
+                })
+                .catch(error => {
+                    console.error('Error initializing Wikipedia agent:', error);
+                    document.getElementById('wikipedia-status').textContent = 'Error';
+                    document.getElementById('wikipedia-status').className = 'status-indicator status-inactive';
+                    showErrorMessage('Error initializing Wikipedia agent: ' + error.message);
+                    isProcessing = false;
+                    updateSendButton();
+                });
+        }
+
+        // Initialize database agent
+        function initDatabase() {
+            const fileInput = document.getElementById('db-file');
+            if (!fileInput.files.length) {
+                showErrorMessage('Please select a database file first');
+                return;
+            }
+
+            isProcessing = true;
+            updateSendButton();
+
+            document.getElementById('database-status').textContent = 'Connecting...';
+            document.getElementById('database-status').className = 'status-indicator status-pending';
+
+            const file = fileInput.files[0];
+            const formData = new FormData();
+            formData.append('session_id', currentSessionId);
+            formData.append('file', file);
+
+            fetch('/api/init_database', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        document.getElementById('database-status').textContent = 'Connected';
+                        document.getElementById('database-status').className = 'status-indicator status-active';
+                        document.getElementById('source-status').textContent = 'Ready';
+                        document.getElementById('source-status').className = 'status-indicator status-active';
+                        showSystemMessage('Database agent initialized successfully');
+                    } else {
+                        document.getElementById('database-status').textContent = 'Error';
+                        document.getElementById('database-status').className = 'status-indicator status-inactive';
+                        showErrorMessage(data.message || 'Failed to initialize database agent');
+                    }
+
+                    isProcessing = false;
+                    updateSendButton();
+                })
+                .catch(error => {
+                    console.error('Error initializing database agent:', error);
+                    document.getElementById('database-status').textContent = 'Error';
+                    document.getElementById('database-status').className = 'status-indicator status-inactive';
+                    showErrorMessage('Error initializing database agent: ' + error.message);
+                    isProcessing = false;
+                    updateSendButton();
+                });
+        }
+
+        // Process PDF document
+        function processPDF() {
+            const fileInput = document.getElementById('pdf-file');
+            if (!fileInput.files.length) {
+                showErrorMessage('Please select a PDF file first');
+                return;
+            }
+
+            isProcessing = true;
+            updateSendButton();
+
+            document.getElementById('pdf-status').textContent = 'Processing...';
+            document.getElementById('pdf-status').className = 'status-indicator status-pending';
+
+            const file = fileInput.files[0];
+            const formData = new FormData();
+            formData.append('session_id', currentSessionId);
+            formData.append('file', file);
+
+            fetch('/api/process_pdf', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        document.getElementById('pdf-status').textContent = 'Loaded';
+                        document.getElementById('pdf-status').className = 'status-indicator status-active';
+                        document.getElementById('source-status').textContent = 'Ready';
+                        document.getElementById('source-status').className = 'status-indicator status-active';
+                        showSystemMessage('PDF processed successfully');
+                    } else {
+                        document.getElementById('pdf-status').textContent = 'Error';
+                        document.getElementById('pdf-status').className = 'status-indicator status-inactive';
+                        showErrorMessage(data.message || 'Failed to process PDF');
+                    }
+
+                    isProcessing = false;
+                    updateSendButton();
+                })
+                .catch(error => {
+                    console.error('Error processing PDF:', error);
+                    document.getElementById('pdf-status').textContent = 'Error';
+                    document.getElementById('pdf-status').className = 'status-indicator status-inactive';
+                    showErrorMessage('Error processing PDF: ' + error.message);
+                    isProcessing = false;
+                    updateSendButton();
+                });
+        }
+
+        // Process Word document
+        function processWord() {
+            const fileInput = document.getElementById('word-file');
+            if (!fileInput.files.length) {
+                showErrorMessage('Please select a Word document first');
+                return;
+            }
+
+            isProcessing = true;
+            updateSendButton();
+
+            document.getElementById('word-status').textContent = 'Processing...';
+            document.getElementById('word-status').className = 'status-indicator status-pending';
+
+            const file = fileInput.files[0];
+            const formData = new FormData();
+            formData.append('session_id', currentSessionId);
+            formData.append('file', file);
+
+            fetch('/api/process_docx', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        document.getElementById('word-status').textContent = 'Loaded';
+                        document.getElementById('word-status').className = 'status-indicator status-active';
+                        document.getElementById('source-status').textContent = 'Ready';
+                        document.getElementById('source-status').className = 'status-indicator status-active';
+                        showSystemMessage('Word document processed successfully');
+                    } else {
+                        document.getElementById('word-status').textContent = 'Error';
+                        document.getElementById('word-status').className = 'status-indicator status-inactive';
+                        showErrorMessage(data.message || 'Failed to process Word document');
+                    }
+
+                    isProcessing = false;
+                    updateSendButton();
+                })
+                .catch(error => {
+                    console.error('Error processing Word document:', error);
+                    document.getElementById('word-status').textContent = 'Error';
+                    document.getElementById('word-status').className = 'status-indicator status-inactive';
+                    showErrorMessage('Error processing Word document: ' + error.message);
+                    isProcessing = false;
+                    updateSendButton();
+                });
+        }
+
+        // Process website
+        function processWebsite() {
+            const url = document.getElementById('website-url').value.trim();
+            if (!url) {
+                showErrorMessage('Please enter a website URL');
+                return;
+            }
+
+            isProcessing = true;
+            updateSendButton();
+
+            document.getElementById('website-status').textContent = 'Processing...';
+            document.getElementById('website-status').className = 'status-indicator status-pending';
+
+            fetch('/api/process_website', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    session_id: currentSessionId,
+                    url: url
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        document.getElementById('website-status').textContent = 'Loaded';
+                        document.getElementById('website-status').className = 'status-indicator status-active';
+                        document.getElementById('source-status').textContent = 'Ready';
+                        document.getElementById('source-status').className = 'status-indicator status-active';
+                        showSystemMessage('Website processed successfully');
+                    } else {
+                        document.getElementById('website-status').textContent = 'Error';
+                        document.getElementById('website-status').className = 'status-indicator status-inactive';
+                        showErrorMessage(data.message || 'Failed to process website');
+                    }
+
+                    isProcessing = false;
+                    updateSendButton();
+                })
+                .catch(error => {
+                    console.error('Error processing website:', error);
+                    document.getElementById('website-status').textContent = 'Error';
+                    document.getElementById('website-status').className = 'status-indicator status-inactive';
+                    showErrorMessage('Error processing website: ' + error.message);
+                    isProcessing = false;
+                    updateSendButton();
+                });
+        }
+
+        // Handle image upload
+        function handleImageUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            imageFile = file;
+
+            // Show preview
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                const preview = document.getElementById('image-preview');
+                preview.src = e.target.result;
+                preview.style.display = 'block';
+            };
+            reader.readAsDataURL(file);
+
+            // Enable send button if there's an image
+            updateSendButton();
+        }
+
+        // Clear chat history
+        function clearChat() {
+            isProcessing = true;
+            updateSendButton();
+
+            fetch('/api/clear_chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    session_id: currentSessionId
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        document.getElementById('chat-messages').innerHTML = '';
+                        showSystemMessage('Chat history cleared');
+                    } else {
+                        showErrorMessage('Failed to clear chat history: ' + (data.message || 'Unknown error'));
+                    }
+
+                    isProcessing = false;
+                    updateSendButton();
+                })
+                .catch(error => {
+                    console.error('Error clearing chat:', error);
+                    showErrorMessage('Error clearing chat: ' + error.message);
+                    isProcessing = false;
+                    updateSendButton();
+                });
+        }
+
+        // Load chat history
+        function loadChatHistory() {
+            fetch('/api/history', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    session_id: currentSessionId
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        const messagesContainer = document.getElementById('chat-messages');
+                        messagesContainer.innerHTML = '';
+
+                        data.messages.forEach(message => {
+                            appendMessage(message.role, message.content);
+                        });
+
+                        scrollToBottom();
+                    }
+                })
+                .catch(error => {
+                    console.error('Error loading chat history:', error);
+                });
+        }
+
+        // Send a chat message
+        function sendMessage() {
+            const input = document.getElementById('message-input');
+            const message = input.value.trim();
+
+            if (!message && !imageFile) {
+                showErrorMessage('Please enter a message or upload an image');
+                return;
+            }
+
+            isProcessing = true;
+            updateSendButton();
+
+            // Clear input
+            input.value = '';
+            input.style.height = 'auto';
+
+            if (imageFile) {
+                // Handle image chat
+                sendImageMessage(message);
+            } else {
+                // Handle text chat
+                sendTextMessage(message);
+            }
+        }
+
+        // Send a text message
+        function sendTextMessage(message) {
+            // Add user message to UI immediately
+            appendMessage('user', message);
+
+            fetch('/api/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    session_id: currentSessionId,
+                    message: message
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        // Add assistant response to UI
+                        appendMessage('assistant', data.response);
+                    } else {
+                        showErrorMessage(data.message || 'Failed to get response');
+                        appendMessage('assistant', 'Error: ' + (data.message || 'Failed to get response'));
+                    }
+
+                    isProcessing = false;
+                    updateSendButton();
+                    scrollToBottom();
+                })
+                .catch(error => {
+                    console.error('Error sending message:', error);
+                    showErrorMessage('Error sending message: ' + error.message);
+                    appendMessage('assistant', 'Error: Failed to communicate with server');
+                    isProcessing = false;
+                    updateSendButton();
+                    scrollToBottom();
+                });
+        }
+
+        // Send an image message
+        function sendImageMessage(prompt) {
+            if (!imageFile) return;
+
+            // Add user message to UI immediately
+            appendMessage('user', prompt ? `${prompt} [Image uploaded]` : '[Image uploaded]');
+
+            const formData = new FormData();
+            formData.append('session_id', currentSessionId);
+            formData.append('prompt', prompt || 'Describe this image');
+            formData.append('image', imageFile);
+
+            fetch('/api/process_image', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        // Add assistant response to UI
+                        appendMessage('assistant', data.response);
+
+                        // Clear the image
+                        imageFile = null;
+                        document.getElementById('image-file').value = '';
+                        document.getElementById('image-preview').style.display = 'none';
+                    } else {
+                        showErrorMessage(data.message || 'Failed to process image');
+                        appendMessage('assistant', 'Error: ' + (data.message || 'Failed to process image'));
+                    }
+
+                    isProcessing = false;
+                    updateSendButton();
+                    scrollToBottom();
+                })
+                .catch(error => {
+                    console.error('Error processing image:', error);
+                    showErrorMessage('Error processing image: ' + error.message);
+                    appendMessage('assistant', 'Error: Failed to process image');
+                    isProcessing = false;
+                    updateSendButton();
+                    scrollToBottom();
+                });
+        }
+
+        // Append a message to the chat UI
+        function appendMessage(role, content) {
+            const messagesContainer = document.getElementById('chat-messages');
+            const messageContainer = document.createElement('div');
+            
+            if (role === 'user') {
+                messageContainer.className = 'message-container user-message-container';
+            } else if (role === 'assistant') {
+                messageContainer.className = 'message-container assistant-message-container';
+            }
+
+            const messageElement = document.createElement('div');
+            
+            if (role === 'system') {
+                messageElement.className = 'system-message';
+            } else if (role === 'error') {
+                messageElement.className = 'error-message';
+            } else {
+                messageElement.className = `message ${role}-message`;
+            }
+
+            // Format content (preserve line breaks and code blocks)
+            let formattedContent = content;
+
+            // Check for code blocks
+            if (content.includes('```')) {
+                formattedContent = '';
+                const parts = content.split('```');
+
+                for (let i = 0; i < parts.length; i++) {
+                    if (i % 2 === 1) {
+                        // Odd parts are code blocks
+                        formattedContent += `<div class="pre-formatted">${parts[i]}</div>`;
+                    } else {
+                        // Even parts are regular text
+                        formattedContent += parts[i].replace(/\n/g, '<br>');
+                    }
+                }
+            } else {
+                formattedContent = content.replace(/\n/g, '<br>');
+            }
+
+            // Add timestamp
+            const now = new Date();
+            const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+            // Add sender name for assistant messages
+            if (role === 'assistant') {
+                formattedContent = `<div class="message-name">${currentModel}</div>` + formattedContent;
+            }
+
+            messageElement.innerHTML = `${formattedContent}<div class="message-time">${timeString}</div>`;
+            
+            if (role === 'system' || role === 'error') {
+                messagesContainer.appendChild(messageElement);
+            } else {
+                messageContainer.appendChild(messageElement);
+                messagesContainer.appendChild(messageContainer);
+            }
+
+            scrollToBottom();
+        }
+
+        // Show a system message
+        function showSystemMessage(message) {
+            appendMessage('system', message);
+        }
+
+        // Show an error message
+        function showErrorMessage(message) {
+            appendMessage('error', message);
+        }
+
+        // Update send button state
+        function updateSendButton() {
+            const input = document.getElementById('message-input');
+            const sendButton = document.getElementById('send-btn');
+
+            sendButton.disabled = isProcessing || (input.value.trim() === '' && !imageFile);
+
+            if (isProcessing) {
+                sendButton.innerHTML = '<div class="spinner"></div>';
+            } else {
+                sendButton.innerHTML = '<i class="bi bi-send"></i>';
+            }
+        }
+    </script>
+</body>
+</html>

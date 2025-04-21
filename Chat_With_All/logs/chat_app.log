@@ -1,0 +1,1087 @@
+2025-04-16 13:20:56,380 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-16 13:20:56,380 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 13:20:56,383 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 13:20:57,819 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 13:20:57,819 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 13:21:02,049 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:21:02] "GET / HTTP/1.1" 200 -
+2025-04-16 13:21:02,327 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:21:02] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 13:21:02,327 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:21:02] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 13:21:02,352 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:21:02] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 13:21:06,982 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:21:06] "[35m[1mPOST /api/chat HTTP/1.1[0m" 500 -
+2025-04-16 13:21:58,682 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 13:21:58,718 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 13:21:59,919 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 13:22:05,559 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-16 13:22:05,559 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 13:22:05,562 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 13:22:07,097 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 13:22:07,097 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 13:22:12,960 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:22:12] "GET / HTTP/1.1" 200 -
+2025-04-16 13:22:13,043 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:22:13] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 13:22:13,044 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:22:13] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 13:22:13,069 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:22:13] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 13:22:15,629 - ollama_chat_app - INFO - Querying Ollama with model: gemma3:1b
+2025-04-16 13:22:17,372 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 13:22:17,375 - ollama_chat_app - INFO - Ollama response received in 1.75 seconds
+2025-04-16 13:22:17,375 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:22:17] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 13:24:02,778 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-16 13:24:02,778 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 13:24:02,783 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 13:24:04,333 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 13:24:04,334 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 13:24:07,357 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:24:07] "GET / HTTP/1.1" 200 -
+2025-04-16 13:24:07,430 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:24:07] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 13:24:07,431 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:24:07] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 13:24:07,459 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:24:07] "[33mGET /api/chat_history?session_id=session_1744790047 HTTP/1.1[0m" 404 -
+2025-04-16 13:24:18,272 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:24:18] "GET / HTTP/1.1" 200 -
+2025-04-16 13:24:18,565 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:24:18] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 13:24:18,568 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:24:18] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 13:24:18,575 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:24:18] "[33mGET /api/chat_history?session_id=session_1744790058 HTTP/1.1[0m" 404 -
+2025-04-16 13:24:45,513 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:24:45] "POST /api/set_model HTTP/1.1" 200 -
+2025-04-16 13:24:47,934 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:24:47] "[31m[1mPOST /api/chat HTTP/1.1[0m" 415 -
+2025-04-16 13:27:39,519 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-16 13:27:39,519 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 13:27:39,554 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 13:27:41,114 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 13:27:41,114 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 13:27:57,986 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:27:57] "GET / HTTP/1.1" 200 -
+2025-04-16 13:27:58,255 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:27:58] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 13:27:58,256 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:27:58] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 13:27:58,262 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:27:58] "[33mGET /api/chat_history?session_id=session_1744790278 HTTP/1.1[0m" 404 -
+2025-04-16 13:28:24,610 - ollama_chat_app - INFO - Querying Ollama with model: gemma3:1b
+2025-04-16 13:28:27,591 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 13:28:27,593 - ollama_chat_app - INFO - Ollama response received in 2.98 seconds
+2025-04-16 13:28:27,593 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:28:27] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 13:28:32,654 - ollama_chat_app - INFO - Querying Ollama with model: gemma3:1b
+2025-04-16 13:28:33,183 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 13:28:33,184 - ollama_chat_app - INFO - Ollama response received in 0.53 seconds
+2025-04-16 13:28:33,184 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:28:33] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 13:28:36,408 - ollama_chat_app - INFO - Querying Ollama with model: gemma3:1b
+2025-04-16 13:28:41,547 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 13:28:41,548 - ollama_chat_app - INFO - Ollama response received in 5.14 seconds
+2025-04-16 13:28:41,548 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:28:41] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 13:28:42,442 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:28:42] "POST /api/set_model HTTP/1.1" 200 -
+2025-04-16 13:28:47,724 - ollama_chat_app - INFO - Querying Ollama with model: gemma3:1b
+2025-04-16 13:28:48,385 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 13:28:48,386 - ollama_chat_app - INFO - Ollama response received in 0.66 seconds
+2025-04-16 13:28:48,386 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:28:48] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 13:30:22,071 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-16 13:30:22,071 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 13:30:22,074 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 13:30:23,666 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 13:30:23,666 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 13:30:25,841 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:30:25] "GET / HTTP/1.1" 200 -
+2025-04-16 13:30:26,025 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:30:26] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 13:30:26,029 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:30:26] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 13:30:26,099 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:30:26] "[33mGET /api/chat_history?session_id=session_1744790426 HTTP/1.1[0m" 404 -
+2025-04-16 13:32:20,932 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-16 13:32:20,932 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 13:32:20,936 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 13:32:22,475 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 13:32:22,475 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 13:32:23,451 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:32:23] "GET / HTTP/1.1" 200 -
+2025-04-16 13:32:23,643 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:32:23] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 13:32:23,649 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:32:23] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 13:32:23,689 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:32:23] "[33mGET /api/chat_history?session_id=session_1744790543 HTTP/1.1[0m" 404 -
+2025-04-16 13:32:31,463 - ollama_chat_app - INFO - Querying Ollama with model: gemma3:1b
+2025-04-16 13:32:32,487 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 13:32:32,490 - ollama_chat_app - INFO - Ollama response received in 1.03 seconds
+2025-04-16 13:32:32,490 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:32:32] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 13:33:41,265 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 13:33:41,266 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 13:33:41,297 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 13:33:42,503 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 13:33:44,019 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 13:33:44,020 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 13:33:47,709 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 13:33:47,774 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 13:33:48,873 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 13:33:50,341 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 13:33:50,341 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 13:36:26,705 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-16 13:36:26,705 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 13:36:26,709 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 13:36:28,269 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 13:36:28,269 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 13:36:31,944 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:36:31] "GET / HTTP/1.1" 200 -
+2025-04-16 13:36:32,159 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:36:32] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 13:36:32,165 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:36:32] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 13:36:32,230 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:36:32] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 13:36:34,845 - ollama_chat_app - INFO - Querying Ollama with model: gemma3:1b
+2025-04-16 13:36:35,465 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 13:36:35,468 - ollama_chat_app - INFO - Ollama response received in 0.62 seconds
+2025-04-16 13:36:35,468 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:36:35] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 13:36:39,886 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:36:39] "POST /api/set_model HTTP/1.1" 200 -
+2025-04-16 13:36:42,135 - ollama_chat_app - INFO - Querying Ollama with model: gemma3:1b
+2025-04-16 13:36:43,651 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 13:36:43,651 - ollama_chat_app - INFO - Ollama response received in 1.52 seconds
+2025-04-16 13:36:43,651 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:36:43] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 13:36:49,258 - ollama_chat_app - INFO - Querying Ollama with model: gemma3:1b
+2025-04-16 13:36:49,924 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 13:36:49,925 - ollama_chat_app - INFO - Ollama response received in 0.67 seconds
+2025-04-16 13:36:49,925 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:36:49] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 13:38:42,843 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 13:38:42,881 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 13:38:43,502 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 13:38:45,040 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 13:38:45,040 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 13:38:49,845 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:38:49] "GET / HTTP/1.1" 200 -
+2025-04-16 13:38:50,014 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:38:50] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 13:38:50,016 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:38:50] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 13:38:50,062 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:38:50] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 13:38:54,195 - ollama_chat_app - INFO - Querying Ollama with model: gemma3:1b
+2025-04-16 13:38:54,760 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 13:38:54,763 - ollama_chat_app - INFO - Ollama response received in 0.57 seconds
+2025-04-16 13:38:54,763 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:38:54] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 13:39:23,854 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:39:23] "POST /api/set_source HTTP/1.1" 200 -
+2025-04-16 13:39:26,439 - ollama_chat_app - INFO - Setting up Wikipedia agent
+2025-04-16 13:39:26,440 - ollama_chat_app - INFO - Initializing Ollama LLM with model gemma3:1b
+2025-04-16 13:39:26,476 - ollama_chat_app - INFO - Wikipedia agent setup complete
+2025-04-16 13:39:26,477 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:39:26] "POST /api/init_wikipedia HTTP/1.1" 200 -
+2025-04-16 13:39:42,179 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 13:39:55,165 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 13:40:15,819 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 13:40:36,561 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 13:40:52,768 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 13:40:52,816 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 13:40:53,515 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 13:40:56,145 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 13:40:56,145 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 13:40:58,953 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:40:58] "POST /api/init_wikipedia HTTP/1.1" 200 -
+2025-04-16 13:41:00,501 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:41:00] "POST /api/init_wikipedia HTTP/1.1" 200 -
+2025-04-16 13:41:05,797 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:41:05] "GET / HTTP/1.1" 200 -
+2025-04-16 13:41:05,964 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:41:05] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 13:41:05,966 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:41:05] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 13:41:05,981 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:41:05] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 13:41:13,099 - ollama_chat_app - INFO - Querying Ollama with model: gemma3:1b
+2025-04-16 13:41:14,020 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 13:41:14,023 - ollama_chat_app - INFO - Ollama response received in 0.92 seconds
+2025-04-16 13:41:14,024 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:41:14] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 13:41:25,637 - ollama_chat_app - INFO - Querying Ollama with model: gemma3:1b
+2025-04-16 13:41:32,766 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 13:41:32,767 - ollama_chat_app - INFO - Ollama response received in 7.13 seconds
+2025-04-16 13:41:32,767 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:41:32] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 13:41:45,483 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:41:45] "GET / HTTP/1.1" 200 -
+2025-04-16 13:41:45,579 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:41:45] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 13:41:45,580 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:41:45] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 13:41:45,589 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:41:45] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 13:41:52,018 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:41:52] "POST /api/set_source HTTP/1.1" 200 -
+2025-04-16 13:41:53,387 - ollama_chat_app - INFO - Setting up Wikipedia agent
+2025-04-16 13:41:53,387 - ollama_chat_app - INFO - Initializing Ollama LLM with model gemma3:1b
+2025-04-16 13:41:53,415 - ollama_chat_app - INFO - Wikipedia agent setup complete
+2025-04-16 13:41:53,415 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:41:53] "POST /api/init_wikipedia HTTP/1.1" 200 -
+2025-04-16 13:42:07,310 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 13:42:16,938 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 13:42:30,289 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 13:42:51,650 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 13:42:55,161 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:42:55] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 13:43:14,372 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:43:14] "POST /api/set_source HTTP/1.1" 200 -
+2025-04-16 13:43:17,669 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:43:17] "POST /api/set_source HTTP/1.1" 200 -
+2025-04-16 13:43:28,625 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:43:28] "[35m[1mPOST /api/process_pdf HTTP/1.1[0m" 500 -
+2025-04-16 13:44:30,844 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 13:44:30,844 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 13:44:30,881 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 13:44:32,042 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 13:44:33,580 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 13:44:33,581 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 13:44:34,704 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:44:34] "GET / HTTP/1.1" 200 -
+2025-04-16 13:44:34,856 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:44:34] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 13:44:34,860 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:44:34] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 13:44:34,894 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:44:34] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 13:44:40,017 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:44:40] "POST /api/set_source HTTP/1.1" 200 -
+2025-04-16 13:44:46,967 - ollama_chat_app - INFO - Opening PDF file: /home/ritik/Documents/VScode/Chat_With_All/uploads/1744791286_DA25S52019070_AdmitCard.pdf
+2025-04-16 13:44:46,983 - ollama_chat_app - INFO - Extracted 416 characters from PDF
+2025-04-16 13:44:46,983 - ollama_chat_app - INFO - Setting up RAG for PDF (/home/ritik/Documents/VScode/Chat_With_All/uploads/1744791286_DA25S52019070_AdmitCard.pdf)
+2025-04-16 13:44:46,984 - ollama_chat_app - INFO - Initializing Ollama LLM with model gemma3:1b
+2025-04-16 13:44:47,003 - ollama_chat_app - INFO - Split PDF (/home/ritik/Documents/VScode/Chat_With_All/uploads/1744791286_DA25S52019070_AdmitCard.pdf) into 1 chunks
+2025-04-16 13:44:47,003 - ollama_chat_app - INFO - Initializing embeddings model
+2025-04-16 13:44:48,018 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-04-16 13:44:48,037 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-04-16 13:44:48,405 - faiss.loader - INFO - Successfully loaded faiss with AVX512 support.
+2025-04-16 13:44:48,437 - ollama_chat_app - INFO - RAG setup complete for PDF (/home/ritik/Documents/VScode/Chat_With_All/uploads/1744791286_DA25S52019070_AdmitCard.pdf)
+2025-04-16 13:44:48,438 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:44:48] "POST /api/process_pdf HTTP/1.1" 200 -
+2025-04-16 13:45:06,792 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-04-16 13:45:08,458 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 13:45:08,930 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:45:08] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 13:45:22,234 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 13:45:22,546 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-04-16 13:45:24,098 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 13:45:24,547 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:45:24] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 13:45:33,689 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:45:33] "POST /api/set_source HTTP/1.1" 200 -
+2025-04-16 13:45:51,909 - ollama_chat_app - INFO - Fetching website content: https://www.thehindu.com/news/national/supreme-court-waqf-amendment-bill-opposition-hearing-updates-april-16/article69455139.ece
+2025-04-16 13:45:52,274 - ollama_chat_app - INFO - Extracted 12712 characters from website
+2025-04-16 13:45:52,274 - ollama_chat_app - INFO - Setting up RAG for Website (https://www.thehindu.com/news/national/supreme-court-waqf-amendment-bill-opposition-hearing-updates-april-16/article69455139.ece)
+2025-04-16 13:45:52,275 - ollama_chat_app - INFO - Initializing Ollama LLM with model gemma3:1b
+2025-04-16 13:45:52,303 - ollama_chat_app - INFO - Split Website (https://www.thehindu.com/news/national/supreme-court-waqf-amendment-bill-opposition-hearing-updates-april-16/article69455139.ece) into 20 chunks
+2025-04-16 13:45:52,303 - ollama_chat_app - INFO - Initializing embeddings model
+2025-04-16 13:45:55,918 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-04-16 13:45:55,922 - ollama_chat_app - INFO - RAG setup complete for Website (https://www.thehindu.com/news/national/supreme-court-waqf-amendment-bill-opposition-hearing-updates-april-16/article69455139.ece)
+2025-04-16 13:45:55,926 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:45:55] "POST /api/process_website HTTP/1.1" 200 -
+2025-04-16 13:46:06,063 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-04-16 13:46:13,332 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 13:46:14,219 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:46:14] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 13:46:25,728 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 13:46:26,095 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-04-16 13:46:33,436 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 13:46:33,893 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:46:33] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 13:46:42,841 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:46:42] "POST /api/set_model HTTP/1.1" 200 -
+2025-04-16 13:46:53,002 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 13:46:53,453 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-04-16 13:47:01,249 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 13:47:01,640 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:47:01] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 13:48:15,764 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:48:15] "POST /api/clear_chat HTTP/1.1" 200 -
+2025-04-16 13:48:32,239 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:48:32] "POST /api/set_source HTTP/1.1" 200 -
+2025-04-16 13:48:32,767 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:48:32] "GET / HTTP/1.1" 200 -
+2025-04-16 13:48:33,007 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:48:33] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 13:48:33,008 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:48:33] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 13:48:33,018 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:48:33] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 13:49:36,532 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 13:49:36,532 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 13:49:36,753 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 13:49:37,523 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 13:49:40,808 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 13:49:40,808 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 13:49:41,340 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:49:41] "GET / HTTP/1.1" 200 -
+2025-04-16 13:49:41,514 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:49:41] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 13:49:41,524 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:49:41] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 13:49:41,562 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:49:41] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 13:49:44,074 - ollama_chat_app - INFO - Querying Ollama with model: gemma3:1b
+2025-04-16 13:49:45,197 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 13:49:45,200 - ollama_chat_app - INFO - Ollama response received in 1.12 seconds
+2025-04-16 13:49:45,200 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:49:45] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 13:49:54,500 - ollama_chat_app - INFO - Querying Ollama with model: gemma3:1b
+2025-04-16 13:50:20,331 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 13:50:20,332 - ollama_chat_app - INFO - Ollama response received in 25.83 seconds
+2025-04-16 13:50:20,332 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:50:20] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 13:50:33,909 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:50:33] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 13:50:33,958 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:50:33] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 13:50:42,563 - ollama_chat_app - INFO - Querying Ollama with model: gemma3:1b
+2025-04-16 13:51:10,058 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 13:51:10,059 - ollama_chat_app - INFO - Ollama response received in 27.50 seconds
+2025-04-16 13:51:10,059 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:51:10] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 13:52:16,264 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 13:52:16,301 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 13:52:17,127 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 13:52:18,761 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 13:52:18,762 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 13:52:19,413 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:52:19] "GET / HTTP/1.1" 200 -
+2025-04-16 13:52:19,517 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:52:19] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 13:52:19,518 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:52:19] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 13:52:19,527 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:52:19] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 13:52:40,782 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 13:52:43,985 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 13:52:43,988 - ollama_chat_app - INFO - Ollama response received in 3.21 seconds
+2025-04-16 13:52:43,988 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:52:43] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 13:52:48,889 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 13:52:49,798 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 13:52:49,799 - ollama_chat_app - INFO - Ollama response received in 0.91 seconds
+2025-04-16 13:52:49,799 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:52:49] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 13:53:01,244 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 13:53:14,616 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 13:53:14,617 - ollama_chat_app - INFO - Ollama response received in 13.37 seconds
+2025-04-16 13:53:14,617 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 13:53:14] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 13:59:29,792 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 13:59:29,831 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 13:59:31,210 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 13:59:32,811 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 13:59:32,811 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 13:59:43,690 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 13:59:43,763 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 13:59:44,692 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 13:59:46,247 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 13:59:46,247 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 14:47:03,449 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-16 14:47:03,449 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 14:47:03,452 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 14:47:05,019 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 14:47:05,019 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 14:47:06,948 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:47:06] "GET / HTTP/1.1" 200 -
+2025-04-16 14:47:07,089 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:47:07] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 14:47:07,090 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:47:07] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 14:47:07,177 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:47:07] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 14:47:10,837 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 14:47:14,206 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 14:47:14,209 - ollama_chat_app - INFO - Ollama response received in 3.37 seconds
+2025-04-16 14:47:14,209 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:47:14] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 14:47:17,618 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 14:47:18,033 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 14:47:18,034 - ollama_chat_app - INFO - Ollama response received in 0.42 seconds
+2025-04-16 14:47:18,034 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:47:18] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 14:47:18,811 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 14:47:19,235 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 14:47:19,236 - ollama_chat_app - INFO - Ollama response received in 0.42 seconds
+2025-04-16 14:47:19,236 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:47:19] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 14:47:19,898 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 14:47:21,211 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 14:47:21,211 - ollama_chat_app - INFO - Ollama response received in 1.31 seconds
+2025-04-16 14:47:21,212 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:47:21] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 14:47:21,297 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 14:47:21,768 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 14:47:21,769 - ollama_chat_app - INFO - Ollama response received in 0.47 seconds
+2025-04-16 14:47:21,769 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:47:21] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 14:47:22,608 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 14:47:24,580 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 14:47:24,581 - ollama_chat_app - INFO - Ollama response received in 1.97 seconds
+2025-04-16 14:47:24,581 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:47:24] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 14:47:25,441 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 14:47:26,788 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 14:47:26,789 - ollama_chat_app - INFO - Ollama response received in 1.35 seconds
+2025-04-16 14:47:26,789 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:47:26] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 14:47:27,366 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 14:47:27,799 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 14:47:27,799 - ollama_chat_app - INFO - Ollama response received in 0.43 seconds
+2025-04-16 14:47:27,800 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:47:27] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 14:49:59,148 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:49:59] "GET / HTTP/1.1" 200 -
+2025-04-16 14:50:01,031 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:50:01] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 14:50:01,032 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:50:01] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 14:50:01,037 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:50:01] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 14:50:05,713 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 14:50:06,179 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 14:50:06,180 - ollama_chat_app - INFO - Ollama response received in 0.47 seconds
+2025-04-16 14:50:06,180 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:50:06] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 14:50:24,014 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 14:50:33,215 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 14:50:33,215 - ollama_chat_app - INFO - Ollama response received in 9.20 seconds
+2025-04-16 14:50:33,216 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:50:33] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 14:50:48,048 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 14:50:53,899 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 14:50:53,900 - ollama_chat_app - INFO - Ollama response received in 5.85 seconds
+2025-04-16 14:50:53,900 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:50:53] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 14:51:08,222 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:51:08] "POST /api/set_source HTTP/1.1" 200 -
+2025-04-16 14:51:09,442 - ollama_chat_app - INFO - Setting up Wikipedia agent
+2025-04-16 14:51:09,443 - ollama_chat_app - INFO - Initializing Ollama LLM with model qwen2.5:1.5b
+2025-04-16 14:51:09,458 - ollama_chat_app - INFO - Wikipedia agent setup complete
+2025-04-16 14:51:09,459 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:51:09] "POST /api/init_wikipedia HTTP/1.1" 200 -
+2025-04-16 14:51:23,595 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 14:51:55,386 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 14:52:01,060 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:52:01] "[35m[1mPOST /api/chat HTTP/1.1[0m" 500 -
+2025-04-16 14:52:19,472 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 14:52:48,170 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 14:52:49,280 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:52:49] "[35m[1mPOST /api/chat HTTP/1.1[0m" 500 -
+2025-04-16 14:54:24,953 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:54:24] "POST /api/set_model HTTP/1.1" 200 -
+2025-04-16 14:54:41,365 - ollama_chat_app - INFO - Processing image with model qwen2.5:1.5b
+2025-04-16 14:54:44,781 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 14:54:44,781 - ollama_chat_app - INFO - Image processing complete
+2025-04-16 14:54:44,786 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:54:44] "[35m[1mPOST /api/process_image HTTP/1.1[0m" 500 -
+2025-04-16 14:54:50,595 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:54:50] "POST /api/clear_chat HTTP/1.1" 200 -
+2025-04-16 14:54:59,643 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:54:59] "POST /api/set_source HTTP/1.1" 200 -
+2025-04-16 14:55:05,131 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:55:05] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 14:55:05,150 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:55:05] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 14:55:06,578 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:55:06] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 14:55:06,585 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:55:06] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 14:55:07,669 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:55:07] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 14:55:07,679 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 14:55:07] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 15:00:21,872 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-16 15:00:21,873 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 15:00:21,876 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 15:00:23,436 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 15:00:23,436 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 15:00:24,832 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:00:24] "GET / HTTP/1.1" 200 -
+2025-04-16 15:00:25,082 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:00:25] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 15:00:25,083 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:00:25] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 15:00:25,104 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:00:25] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 15:00:28,077 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:00:28] "POST /api/set_source HTTP/1.1" 200 -
+2025-04-16 15:00:31,386 - ollama_chat_app - INFO - Setting up Wikipedia agent
+2025-04-16 15:00:31,386 - ollama_chat_app - INFO - Initializing Ollama LLM with model qwen2.5:1.5b
+2025-04-16 15:00:31,407 - ollama_chat_app - INFO - Wikipedia agent setup complete
+2025-04-16 15:00:31,407 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:00:31] "POST /api/init_wikipedia HTTP/1.1" 200 -
+2025-04-16 15:00:49,937 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 15:01:04,429 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 15:01:05,831 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:01:05] "[35m[1mPOST /api/chat HTTP/1.1[0m" 500 -
+2025-04-16 15:02:05,900 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:02:05] "POST /api/set_source HTTP/1.1" 200 -
+2025-04-16 15:02:13,972 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 15:02:48,393 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-16 15:02:48,393 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 15:02:48,397 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 15:02:50,003 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 15:02:50,004 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 15:02:51,271 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:02:51] "GET / HTTP/1.1" 200 -
+2025-04-16 15:02:51,342 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:02:51] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 15:02:51,343 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:02:51] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 15:02:51,357 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:02:51] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 15:02:55,610 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 15:02:56,127 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 15:02:56,131 - ollama_chat_app - INFO - Ollama response received in 0.52 seconds
+2025-04-16 15:02:56,132 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:02:56] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 15:03:01,189 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:03:01] "POST /api/set_source HTTP/1.1" 200 -
+2025-04-16 15:03:02,672 - ollama_chat_app - INFO - Setting up Wikipedia agent
+2025-04-16 15:03:02,672 - ollama_chat_app - INFO - Initializing Ollama LLM with model qwen2.5:1.5b
+2025-04-16 15:03:02,689 - ollama_chat_app - INFO - Wikipedia agent setup complete
+2025-04-16 15:03:02,689 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:03:02] "POST /api/init_wikipedia HTTP/1.1" 200 -
+2025-04-16 15:03:23,815 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 15:03:46,264 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 15:03:50,660 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:03:50] "[35m[1mPOST /api/chat HTTP/1.1[0m" 500 -
+2025-04-16 15:04:14,433 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 15:04:15,307 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:04:15] "[35m[1mPOST /api/chat HTTP/1.1[0m" 500 -
+2025-04-16 15:04:23,662 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:04:23] "POST /api/set_source HTTP/1.1" 200 -
+2025-04-16 15:04:39,409 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 15:05:23,451 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 15:05:23,451 - ollama_chat_app - INFO - Ollama response received in 44.04 seconds
+2025-04-16 15:05:23,456 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:05:23] "[35m[1mPOST /api/chat HTTP/1.1[0m" 500 -
+2025-04-16 15:05:31,604 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:05:31] "GET / HTTP/1.1" 200 -
+2025-04-16 15:05:31,671 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:05:31] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 15:05:31,672 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:05:31] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 15:05:31,680 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:05:31] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 15:05:40,857 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 15:06:46,226 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 15:06:46,227 - ollama_chat_app - INFO - Ollama response received in 65.37 seconds
+2025-04-16 15:06:46,227 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:06:46] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 15:11:44,837 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:11:44] "POST /api/set_source HTTP/1.1" 200 -
+2025-04-16 15:21:07,558 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:21:07] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 15:21:14,729 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:21:14] "POST /api/set_source HTTP/1.1" 200 -
+2025-04-16 15:21:32,584 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 15:22:11,483 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 15:22:11,483 - ollama_chat_app - INFO - Ollama response received in 38.90 seconds
+2025-04-16 15:22:11,484 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:22:11] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 15:27:42,572 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 15:27:42,626 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 15:27:43,462 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 15:27:48,894 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 15:27:48,894 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 15:28:15,076 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 15:28:15,108 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 15:28:15,991 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 15:28:17,743 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 15:28:17,744 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 15:28:22,325 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:28:22] "GET / HTTP/1.1" 200 -
+2025-04-16 15:30:31,670 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-16 15:30:31,671 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 15:30:31,674 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 15:30:33,225 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 15:30:33,225 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 15:30:36,503 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:30:36] "GET / HTTP/1.1" 200 -
+2025-04-16 15:30:36,618 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:30:36] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 15:30:36,619 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:30:36] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 15:30:36,684 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:30:36] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 15:30:36,707 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:30:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-16 15:30:49,224 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:30:49] "GET / HTTP/1.1" 200 -
+2025-04-16 15:30:49,557 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:30:49] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 15:30:49,558 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:30:49] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 15:30:49,566 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:30:49] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 15:30:53,964 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 15:30:55,450 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-16 15:30:55,858 - ollama_chat_app - ERROR - Error querying Ollama: Error code: 404 - {'error': {'message': 'The model `gpt-40` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+2025-04-16 15:30:55,858 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:30:55] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 15:31:09,436 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 15:31:09,747 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 15:31:10,242 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 15:31:11,738 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 15:31:11,739 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 15:31:12,264 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:31:12] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 15:31:26,634 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 15:31:26,666 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 15:31:27,639 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 15:31:29,203 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 15:31:29,204 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 15:31:30,810 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:31:30] "GET / HTTP/1.1" 200 -
+2025-04-16 15:31:30,895 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:31:30] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 15:31:30,897 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:31:30] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 15:31:30,903 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:31:30] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 15:31:33,935 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 15:31:36,788 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 15:31:36,790 - ollama_chat_app - INFO - Ollama response received in 2.86 seconds
+2025-04-16 15:31:36,791 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:31:36] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 15:31:43,293 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 15:31:45,609 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 15:31:45,610 - ollama_chat_app - INFO - Ollama response received in 2.32 seconds
+2025-04-16 15:31:45,610 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:31:45] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 15:31:53,910 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 15:32:03,100 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 15:32:03,101 - ollama_chat_app - INFO - Ollama response received in 9.19 seconds
+2025-04-16 15:32:03,101 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:32:03] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 15:32:25,041 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:32:25] "POST /api/set_source HTTP/1.1" 200 -
+2025-04-16 15:32:26,841 - ollama_chat_app - INFO - Setting up Wikipedia agent
+2025-04-16 15:32:26,841 - ollama_chat_app - INFO - Initializing Ollama LLM with model qwen2.5:1.5b
+2025-04-16 15:32:26,859 - ollama_chat_app - INFO - Wikipedia agent setup complete
+2025-04-16 15:32:26,859 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:32:26] "POST /api/init_wikipedia HTTP/1.1" 200 -
+2025-04-16 15:32:43,901 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 15:33:04,883 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 15:33:06,488 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:33:06] "[35m[1mPOST /api/chat HTTP/1.1[0m" 500 -
+2025-04-16 15:39:42,295 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 15:39:42,296 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 15:39:42,347 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 15:39:43,967 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 15:39:46,652 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 15:39:46,652 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 15:40:52,090 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 15:40:52,090 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 15:40:52,130 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 15:40:52,717 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 15:40:54,182 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 15:40:54,182 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 15:40:57,324 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-16 15:40:57,324 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 15:40:57,327 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 15:40:58,846 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 15:40:58,846 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 15:41:00,943 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:41:00] "GET / HTTP/1.1" 200 -
+2025-04-16 15:41:01,258 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:41:01] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 15:41:01,259 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:41:01] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 15:41:01,271 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:41:01] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 15:41:05,493 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 15:41:08,060 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 15:41:08,063 - ollama_chat_app - INFO - Ollama response received in 2.57 seconds
+2025-04-16 15:41:08,064 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:41:08] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 15:41:20,061 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 15:41:20,595 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 15:41:20,595 - ollama_chat_app - INFO - Ollama response received in 0.53 seconds
+2025-04-16 15:41:20,596 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:41:20] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 15:41:25,107 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 15:41:31,094 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 15:41:31,095 - ollama_chat_app - INFO - Ollama response received in 5.99 seconds
+2025-04-16 15:41:31,095 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:41:31] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 15:41:33,695 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 15:41:39,926 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 15:41:39,927 - ollama_chat_app - INFO - Ollama response received in 6.23 seconds
+2025-04-16 15:41:39,927 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:41:39] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 15:41:51,486 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 15:42:01,625 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 15:42:01,625 - ollama_chat_app - INFO - Ollama response received in 10.14 seconds
+2025-04-16 15:42:01,626 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:42:01] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 15:42:08,148 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:42:08] "POST /api/set_source HTTP/1.1" 200 -
+2025-04-16 15:42:10,202 - ollama_chat_app - INFO - Setting up Wikipedia agent
+2025-04-16 15:42:10,202 - ollama_chat_app - INFO - Initializing Ollama LLM with model qwen2.5:1.5b
+2025-04-16 15:42:10,239 - ollama_chat_app - INFO - Wikipedia agent setup complete
+2025-04-16 15:42:10,239 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:42:10] "POST /api/init_wikipedia HTTP/1.1" 200 -
+2025-04-16 15:42:29,440 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 15:42:49,645 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 15:42:51,043 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:42:51] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 15:43:01,277 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:43:01] "POST /api/set_source HTTP/1.1" 200 -
+2025-04-16 15:43:27,715 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:43:27] "POST /api/set_source HTTP/1.1" 200 -
+2025-04-16 15:43:42,477 - ollama_chat_app - INFO - Opening PDF file: /home/ritik/Documents/VScode/Chat_With_All/uploads/1744798422_Challan_500.pdf
+2025-04-16 15:43:42,635 - ollama_chat_app - INFO - Extracted 2637 characters from PDF
+2025-04-16 15:43:42,636 - ollama_chat_app - INFO - Setting up RAG for PDF (/home/ritik/Documents/VScode/Chat_With_All/uploads/1744798422_Challan_500.pdf)
+2025-04-16 15:43:42,636 - ollama_chat_app - INFO - Initializing Ollama LLM with model qwen2.5:1.5b
+2025-04-16 15:43:42,651 - ollama_chat_app - INFO - Split PDF (/home/ritik/Documents/VScode/Chat_With_All/uploads/1744798422_Challan_500.pdf) into 3 chunks
+2025-04-16 15:43:42,651 - ollama_chat_app - INFO - Initializing embeddings model
+2025-04-16 15:43:44,723 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-04-16 15:43:44,802 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-04-16 15:43:44,919 - faiss.loader - INFO - Successfully loaded faiss with AVX512 support.
+2025-04-16 15:43:44,941 - ollama_chat_app - INFO - RAG setup complete for PDF (/home/ritik/Documents/VScode/Chat_With_All/uploads/1744798422_Challan_500.pdf)
+2025-04-16 15:43:44,942 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:43:44] "POST /api/process_pdf HTTP/1.1" 200 -
+2025-04-16 15:43:57,743 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-04-16 15:44:27,858 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 15:44:31,303 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:44:31] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 15:44:35,886 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 15:44:36,374 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-04-16 15:45:07,625 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 15:45:08,460 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:45:08] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 15:45:16,560 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:45:16] "POST /api/set_source HTTP/1.1" 200 -
+2025-04-16 15:45:34,624 - ollama_chat_app - INFO - Opening Word document: /home/ritik/Documents/VScode/Chat_With_All/uploads/1744798534_Priya_Sharma.docx
+2025-04-16 15:45:34,715 - ollama_chat_app - INFO - Extracted 13222 characters from Word document
+2025-04-16 15:45:34,715 - ollama_chat_app - INFO - Setting up RAG for Word document (/home/ritik/Documents/VScode/Chat_With_All/uploads/1744798534_Priya_Sharma.docx)
+2025-04-16 15:45:34,715 - ollama_chat_app - INFO - Initializing Ollama LLM with model qwen2.5:1.5b
+2025-04-16 15:45:34,734 - ollama_chat_app - INFO - Split Word document (/home/ritik/Documents/VScode/Chat_With_All/uploads/1744798534_Priya_Sharma.docx) into 17 chunks
+2025-04-16 15:45:34,734 - ollama_chat_app - INFO - Initializing embeddings model
+2025-04-16 15:45:38,061 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-04-16 15:45:38,064 - ollama_chat_app - INFO - RAG setup complete for Word document (/home/ritik/Documents/VScode/Chat_With_All/uploads/1744798534_Priya_Sharma.docx)
+2025-04-16 15:45:38,068 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:45:38] "POST /api/process_docx HTTP/1.1" 200 -
+2025-04-16 15:45:57,533 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-04-16 15:46:08,504 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 15:46:09,126 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:46:09] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 15:46:21,138 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:46:21] "POST /api/set_source HTTP/1.1" 200 -
+2025-04-16 15:46:37,084 - ollama_chat_app - INFO - Fetching website content: https://github.com/ritigit7/RecruitAI-Assistant
+2025-04-16 15:46:38,010 - ollama_chat_app - INFO - Extracted 8768 characters from website
+2025-04-16 15:46:38,010 - ollama_chat_app - INFO - Setting up RAG for Website (https://github.com/ritigit7/RecruitAI-Assistant)
+2025-04-16 15:46:38,010 - ollama_chat_app - INFO - Initializing Ollama LLM with model qwen2.5:1.5b
+2025-04-16 15:46:38,027 - ollama_chat_app - INFO - Split Website (https://github.com/ritigit7/RecruitAI-Assistant) into 12 chunks
+2025-04-16 15:46:38,027 - ollama_chat_app - INFO - Initializing embeddings model
+2025-04-16 15:46:41,550 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-04-16 15:46:41,552 - ollama_chat_app - INFO - RAG setup complete for Website (https://github.com/ritigit7/RecruitAI-Assistant)
+2025-04-16 15:46:41,555 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:46:41] "POST /api/process_website HTTP/1.1" 200 -
+2025-04-16 15:46:47,119 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-04-16 15:47:00,044 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 15:47:00,455 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:47:00] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 15:47:18,263 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 15:47:18,693 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-04-16 15:47:32,786 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 15:47:33,360 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:47:33] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 15:48:03,375 - ollama_chat_app - INFO - Processing image with model qwen2.5:1.5b
+2025-04-16 15:48:04,066 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 15:48:04,066 - ollama_chat_app - INFO - Image processing complete
+2025-04-16 15:48:05,473 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:48:05] "[35m[1mPOST /api/process_image HTTP/1.1[0m" 500 -
+2025-04-16 15:48:26,486 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:48:26] "POST /api/set_model HTTP/1.1" 200 -
+2025-04-16 15:48:44,290 - ollama_chat_app - INFO - Processing image with model qwen2.5:1.5b
+2025-04-16 15:48:46,816 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 15:48:46,816 - ollama_chat_app - INFO - Image processing complete
+2025-04-16 15:48:46,820 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:48:46] "[35m[1mPOST /api/process_image HTTP/1.1[0m" 500 -
+2025-04-16 15:48:48,737 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:48:48] "POST /api/clear_chat HTTP/1.1" 200 -
+2025-04-16 15:54:39,465 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-16 15:54:39,465 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 15:54:39,492 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 15:54:41,198 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 15:54:41,199 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 15:55:03,553 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:55:03] "GET / HTTP/1.1" 200 -
+2025-04-16 15:55:03,838 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:55:03] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 15:55:04,286 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:55:04] "GET / HTTP/1.1" 200 -
+2025-04-16 15:55:04,613 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:55:04] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 15:56:43,662 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:56:43] "GET / HTTP/1.1" 200 -
+2025-04-16 15:56:43,749 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:56:43] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 15:56:43,751 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:56:43] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 15:56:43,769 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:56:43] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 15:57:03,145 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:57:03] "GET / HTTP/1.1" 200 -
+2025-04-16 15:57:03,232 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:57:03] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 15:57:11,808 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:57:11] "GET / HTTP/1.1" 200 -
+2025-04-16 15:57:11,881 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:57:11] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 15:57:11,883 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:57:11] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 15:57:11,900 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:57:11] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 15:57:21,620 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:57:21] "GET / HTTP/1.1" 200 -
+2025-04-16 15:57:21,692 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:57:21] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 15:57:21,692 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:57:21] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 15:57:21,711 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:57:21] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 15:57:33,019 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:57:33] "GET / HTTP/1.1" 200 -
+2025-04-16 15:57:33,092 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:57:33] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 15:57:33,093 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:57:33] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 15:57:33,111 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:57:33] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 15:57:45,858 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:57:45] "GET / HTTP/1.1" 200 -
+2025-04-16 15:57:45,932 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:57:45] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 15:57:45,933 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:57:45] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 15:57:45,957 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:57:45] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 15:58:18,727 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:58:18] "GET / HTTP/1.1" 200 -
+2025-04-16 15:58:18,810 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:58:18] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 15:58:18,813 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:58:18] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 15:58:18,853 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:58:18] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 15:58:38,359 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:58:38] "GET / HTTP/1.1" 200 -
+2025-04-16 15:58:38,489 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:58:38] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 15:58:38,490 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:58:38] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 15:58:38,511 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:58:38] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 15:59:14,304 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:59:14] "GET / HTTP/1.1" 200 -
+2025-04-16 15:59:14,394 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:59:14] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 15:59:14,395 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:59:14] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 15:59:14,409 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:59:14] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 15:59:37,514 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:59:37] "GET / HTTP/1.1" 200 -
+2025-04-16 15:59:37,595 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:59:37] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 15:59:37,596 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:59:37] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 15:59:37,617 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:59:37] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 15:59:43,258 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:59:43] "GET / HTTP/1.1" 200 -
+2025-04-16 15:59:43,329 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:59:43] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 15:59:43,330 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:59:43] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 15:59:43,345 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 15:59:43] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:00:03,310 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:00:03] "GET / HTTP/1.1" 200 -
+2025-04-16 16:00:03,384 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:00:03] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:00:03,385 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:00:03] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:00:03,403 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:00:03] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:00:50,606 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:00:50] "GET / HTTP/1.1" 200 -
+2025-04-16 16:00:50,707 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:00:50] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:00:50,709 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:00:50] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:00:50,726 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:00:50] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:01:00,867 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:01:00] "GET / HTTP/1.1" 200 -
+2025-04-16 16:01:01,006 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:01:01] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:01:01,008 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:01:01] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:01:01,014 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:01:01] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:01:11,860 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:01:11] "GET / HTTP/1.1" 200 -
+2025-04-16 16:01:11,935 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:01:11] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:01:11,937 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:01:11] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:01:11,954 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:01:11] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:01:35,850 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:01:35] "GET / HTTP/1.1" 200 -
+2025-04-16 16:01:35,924 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:01:35] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:01:35,926 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:01:35] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:01:35,941 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:01:35] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:01:50,656 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:01:50] "GET / HTTP/1.1" 200 -
+2025-04-16 16:01:50,737 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:01:50] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:01:50,738 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:01:50] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:01:50,749 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:01:50] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:02:06,400 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:02:06] "GET / HTTP/1.1" 200 -
+2025-04-16 16:02:06,479 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:02:06] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:02:06,480 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:02:06] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:02:06,497 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:02:06] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:02:42,706 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:02:42] "GET / HTTP/1.1" 200 -
+2025-04-16 16:02:42,784 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:02:42] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:02:42,785 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:02:42] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:02:42,799 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:02:42] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:03:09,173 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:03:09] "GET / HTTP/1.1" 200 -
+2025-04-16 16:03:09,348 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:03:09] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:03:09,349 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:03:09] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:03:09,367 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:03:09] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:04:18,734 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:04:18] "GET / HTTP/1.1" 200 -
+2025-04-16 16:04:18,839 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:04:18] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:04:18,841 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:04:18] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:04:18,863 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:04:18] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:04:26,802 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 16:04:29,897 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:04:29,900 - ollama_chat_app - INFO - Ollama response received in 3.10 seconds
+2025-04-16 16:04:29,901 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:04:29] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:04:32,484 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:04:32] "POST /api/set_model HTTP/1.1" 200 -
+2025-04-16 16:04:34,637 - ollama_chat_app - INFO - Querying Ollama with model: gemma3:1b
+2025-04-16 16:04:39,311 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:04:39,313 - ollama_chat_app - INFO - Ollama response received in 4.68 seconds
+2025-04-16 16:04:39,313 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:04:39] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:04:46,986 - ollama_chat_app - INFO - Querying Ollama with model: gemma3:1b
+2025-04-16 16:04:47,711 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:04:47,711 - ollama_chat_app - INFO - Ollama response received in 0.73 seconds
+2025-04-16 16:04:47,712 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:04:47] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:04:51,214 - ollama_chat_app - INFO - Querying Ollama with model: gemma3:1b
+2025-04-16 16:04:51,862 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:04:51,863 - ollama_chat_app - INFO - Ollama response received in 0.65 seconds
+2025-04-16 16:04:51,863 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:04:51] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:04:57,585 - ollama_chat_app - INFO - Querying Ollama with model: gemma3:1b
+2025-04-16 16:04:58,608 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:04:58,609 - ollama_chat_app - INFO - Ollama response received in 1.02 seconds
+2025-04-16 16:04:58,609 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:04:58] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:05:11,437 - ollama_chat_app - INFO - Querying Ollama with model: gemma3:1b
+2025-04-16 16:05:17,963 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:05:17,965 - ollama_chat_app - INFO - Ollama response received in 6.53 seconds
+2025-04-16 16:05:17,965 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:05:17] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:05:33,525 - ollama_chat_app - INFO - Querying Ollama with model: gemma3:1b
+2025-04-16 16:05:34,795 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:05:34,796 - ollama_chat_app - INFO - Ollama response received in 1.27 seconds
+2025-04-16 16:05:34,796 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:05:34] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:05:55,202 - ollama_chat_app - INFO - Querying Ollama with model: gemma3:1b
+2025-04-16 16:05:56,465 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:05:56,466 - ollama_chat_app - INFO - Ollama response received in 1.26 seconds
+2025-04-16 16:05:56,466 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:05:56] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:05:59,807 - ollama_chat_app - INFO - Querying Ollama with model: gemma3:1b
+2025-04-16 16:06:01,205 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:06:01,206 - ollama_chat_app - INFO - Ollama response received in 1.40 seconds
+2025-04-16 16:06:01,206 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:06:01] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:06:14,225 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:06:14] "POST /api/set_model HTTP/1.1" 200 -
+2025-04-16 16:06:21,629 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 16:06:22,174 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:06:22,175 - ollama_chat_app - INFO - Ollama response received in 0.55 seconds
+2025-04-16 16:06:22,176 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:06:22] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:06:27,165 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 16:06:27,703 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:06:27,704 - ollama_chat_app - INFO - Ollama response received in 0.54 seconds
+2025-04-16 16:06:27,705 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:06:27] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:06:40,262 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 16:06:41,103 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:06:41,103 - ollama_chat_app - INFO - Ollama response received in 0.84 seconds
+2025-04-16 16:06:41,104 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:06:41] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:06:50,908 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 16:06:52,458 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:06:52,458 - ollama_chat_app - INFO - Ollama response received in 1.55 seconds
+2025-04-16 16:06:52,459 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:06:52] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:07:05,737 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 16:07:19,582 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:07:19,583 - ollama_chat_app - INFO - Ollama response received in 13.85 seconds
+2025-04-16 16:07:19,583 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:07:19] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:07:27,442 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:07:27] "POST /api/clear_chat HTTP/1.1" 200 -
+2025-04-16 16:08:12,399 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:08:12] "GET / HTTP/1.1" 200 -
+2025-04-16 16:08:13,437 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:08:13] "GET / HTTP/1.1" 200 -
+2025-04-16 16:08:13,888 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:08:13] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:08:13,889 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:08:13] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:08:14,204 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:08:14] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:08:19,034 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:08:19] "POST /api/clear_chat HTTP/1.1" 200 -
+2025-04-16 16:08:23,899 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 16:08:25,133 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:08:25,134 - ollama_chat_app - INFO - Ollama response received in 1.23 seconds
+2025-04-16 16:08:25,134 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:08:25] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:08:36,223 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 16:08:40,707 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:08:40,708 - ollama_chat_app - INFO - Ollama response received in 4.48 seconds
+2025-04-16 16:08:40,708 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:08:40] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:09:27,641 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 16:09:37,935 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:09:37,935 - ollama_chat_app - INFO - Ollama response received in 10.29 seconds
+2025-04-16 16:09:37,936 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:09:37] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:10:02,331 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:10:02] "POST /api/set_source HTTP/1.1" 200 -
+2025-04-16 16:10:03,671 - ollama_chat_app - INFO - Setting up Wikipedia agent
+2025-04-16 16:10:03,671 - ollama_chat_app - INFO - Initializing Ollama LLM with model qwen2.5:1.5b
+2025-04-16 16:10:03,726 - ollama_chat_app - INFO - Wikipedia agent setup complete
+2025-04-16 16:10:03,727 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:10:03] "POST /api/init_wikipedia HTTP/1.1" 200 -
+2025-04-16 16:10:13,687 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 16:10:28,353 - httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-04-16 16:10:30,181 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:10:30] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:10:42,099 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:10:42] "POST /api/set_source HTTP/1.1" 200 -
+2025-04-16 16:10:45,616 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:10:45] "POST /api/set_source HTTP/1.1" 200 -
+2025-04-16 16:11:03,050 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:11:03] "GET / HTTP/1.1" 200 -
+2025-04-16 16:11:03,260 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:11:03] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:11:03,263 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:11:03] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:11:03,281 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:11:03] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:11:18,554 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:11:18] "GET / HTTP/1.1" 200 -
+2025-04-16 16:11:18,684 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:11:18] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:11:18,685 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:11:18] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:11:18,705 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:11:18] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:11:38,233 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:11:38] "GET / HTTP/1.1" 200 -
+2025-04-16 16:11:38,309 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:11:38] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:11:38,310 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:11:38] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:11:38,324 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:11:38] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:12:44,270 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:12:44] "GET / HTTP/1.1" 200 -
+2025-04-16 16:12:44,377 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:12:44] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:12:44,379 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:12:44] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:12:44,407 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:12:44] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:12:54,285 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:12:54] "GET / HTTP/1.1" 200 -
+2025-04-16 16:12:54,417 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:12:54] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:12:54,418 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:12:54] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:12:54,438 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:12:54] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:13:06,593 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:13:06] "GET / HTTP/1.1" 200 -
+2025-04-16 16:13:06,671 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:13:06] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:13:06,672 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:13:06] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:13:06,689 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:13:06] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:13:25,859 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:13:25] "GET / HTTP/1.1" 200 -
+2025-04-16 16:13:25,935 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:13:25] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:13:25,936 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:13:25] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:13:25,951 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:13:25] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:13:42,264 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:13:42] "GET / HTTP/1.1" 200 -
+2025-04-16 16:13:42,337 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:13:42] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:13:42,339 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:13:42] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:13:42,352 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:13:42] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:13:43,669 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:13:43] "GET / HTTP/1.1" 200 -
+2025-04-16 16:13:43,744 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:13:43] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:13:43,745 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:13:43] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:13:43,764 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:13:43] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:14:02,206 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:14:02] "GET / HTTP/1.1" 200 -
+2025-04-16 16:14:02,277 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:14:02] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:14:02,278 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:14:02] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:14:02,291 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:14:02] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:30:37,366 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-16 16:30:37,366 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 16:30:37,370 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 16:30:38,986 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 16:30:38,986 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 16:30:40,076 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:30:40] "GET / HTTP/1.1" 200 -
+2025-04-16 16:30:40,444 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:30:40] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:30:40,445 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:30:40] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:30:40,458 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:30:40] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:30:51,142 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 16:30:55,399 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:30:55,401 - ollama_chat_app - INFO - Ollama response received in 4.26 seconds
+2025-04-16 16:30:55,402 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:30:55] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:33:14,911 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 16:33:15,686 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 16:33:16,324 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 16:33:18,323 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 16:33:18,324 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 16:33:36,034 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:33:36] "GET / HTTP/1.1" 200 -
+2025-04-16 16:33:36,238 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:33:36] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:33:36,252 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:33:36] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:33:36,289 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:33:36] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:33:38,332 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:33:38] "POST /api/set_model HTTP/1.1" 200 -
+2025-04-16 16:33:43,023 - ollama_chat_app - INFO - Querying Ollama with model: gpt-4o
+2025-04-16 16:33:43,040 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-16 16:33:43,041 - ollama_chat_app - ERROR - Error querying Ollama: Error code: 404 - {'error': {'message': 'model "gpt-4o" not found, try pulling it first', 'type': 'api_error', 'param': None, 'code': None}}
+2025-04-16 16:33:43,042 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:33:43] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:34:29,757 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:34:29] "POST /api/set_model HTTP/1.1" 200 -
+2025-04-16 16:34:31,119 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:34:31] "GET / HTTP/1.1" 200 -
+2025-04-16 16:34:31,270 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:34:31] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:34:31,272 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:34:31] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:34:31,282 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:34:31] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:34:33,607 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:34:33] "POST /api/set_model HTTP/1.1" 200 -
+2025-04-16 16:34:35,494 - ollama_chat_app - INFO - Querying Ollama with model: codellama
+2025-04-16 16:34:58,851 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:34:59,480 - ollama_chat_app - INFO - Ollama response received in 23.99 seconds
+2025-04-16 16:34:59,523 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:34:59] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:35:21,022 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:35:21] "POST /api/set_model HTTP/1.1" 200 -
+2025-04-16 16:35:23,023 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 16:35:29,984 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:35:29,985 - ollama_chat_app - INFO - Ollama response received in 6.96 seconds
+2025-04-16 16:35:29,986 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:35:29] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:35:33,246 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 16:35:34,797 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:35:34,798 - ollama_chat_app - INFO - Ollama response received in 1.55 seconds
+2025-04-16 16:35:34,798 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:35:34] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:35:39,843 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 16:35:40,581 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:35:40,581 - ollama_chat_app - INFO - Ollama response received in 0.74 seconds
+2025-04-16 16:35:40,582 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:35:40] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:35:44,780 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:35:44] "POST /api/clear_chat HTTP/1.1" 200 -
+2025-04-16 16:38:53,670 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:38:53] "GET / HTTP/1.1" 200 -
+2025-04-16 16:38:55,321 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:38:55] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:38:55,323 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:38:55] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:38:55,327 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:38:55] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:38:57,591 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:38:57] "GET / HTTP/1.1" 200 -
+2025-04-16 16:38:57,720 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:38:57] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:38:57,721 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:38:57] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:38:57,737 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:38:57] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:39:18,217 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:39:18] "GET / HTTP/1.1" 200 -
+2025-04-16 16:39:18,301 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:39:18] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:39:18,302 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:39:18] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:39:18,362 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:39:18] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:40:47,250 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:40:47] "GET / HTTP/1.1" 200 -
+2025-04-16 16:40:47,359 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:40:47] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:40:47,359 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:40:47] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:40:47,376 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:40:47] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:40:58,592 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:40:58] "GET / HTTP/1.1" 200 -
+2025-04-16 16:40:58,683 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:40:58] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:40:58,685 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:40:58] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:40:58,697 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:40:58] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:41:10,763 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:41:10] "GET / HTTP/1.1" 200 -
+2025-04-16 16:41:10,839 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:41:10] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:41:10,841 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:41:10] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:41:10,855 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:41:10] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:41:19,319 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:41:19] "GET / HTTP/1.1" 200 -
+2025-04-16 16:41:19,422 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:41:19] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:41:19,424 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:41:19] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:41:19,464 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:41:19] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:41:28,813 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:41:28] "GET / HTTP/1.1" 200 -
+2025-04-16 16:41:28,884 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:41:28] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:41:28,886 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:41:28] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:41:28,899 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:41:28] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:41:56,122 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:41:56] "GET / HTTP/1.1" 200 -
+2025-04-16 16:41:56,203 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:41:56] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:41:56,205 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:41:56] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:41:56,218 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:41:56] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:42:06,228 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:42:06] "GET / HTTP/1.1" 200 -
+2025-04-16 16:42:06,312 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:42:06] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:42:06,314 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:42:06] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:42:06,331 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:42:06] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:42:12,736 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 16:42:14,864 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:42:14,865 - ollama_chat_app - INFO - Ollama response received in 2.13 seconds
+2025-04-16 16:42:14,866 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:42:14] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:42:56,999 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:42:56] "GET / HTTP/1.1" 200 -
+2025-04-16 16:42:57,090 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:42:57] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:42:57,091 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:42:57] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:42:57,105 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:42:57] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:43:12,730 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:43:12] "GET / HTTP/1.1" 200 -
+2025-04-16 16:43:12,867 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:43:12] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:43:12,868 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:43:12] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:43:12,888 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:43:12] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:43:27,886 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:43:27] "GET / HTTP/1.1" 200 -
+2025-04-16 16:43:27,965 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:43:27] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:43:27,966 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:43:27] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:43:27,980 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:43:27] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:43:35,865 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 16:43:36,416 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:43:36,417 - ollama_chat_app - INFO - Ollama response received in 0.55 seconds
+2025-04-16 16:43:36,417 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:43:36] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:43:49,620 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 16:44:10,266 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:44:10,267 - ollama_chat_app - INFO - Ollama response received in 20.65 seconds
+2025-04-16 16:44:10,267 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:44:10] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 16:49:43,711 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 16:49:49,010 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 16:50:05,084 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 16:50:05,084 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 16:51:30,086 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 16:51:30,087 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 16:51:30,116 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 16:51:31,277 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 16:51:33,068 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 16:51:33,068 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 16:51:53,720 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 16:51:53,720 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 16:51:54,247 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 16:51:55,050 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 16:51:56,993 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 16:51:56,993 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 16:59:44,263 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-16 16:59:44,263 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 16:59:44,267 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 16:59:45,821 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 16:59:45,822 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 16:59:48,777 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:59:48] "GET / HTTP/1.1" 200 -
+2025-04-16 16:59:49,178 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:59:49] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 16:59:49,179 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:59:49] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 16:59:49,189 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:59:49] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 16:59:54,472 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b (streaming)
+2025-04-16 16:59:54,474 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:59:54] "[31m[1mGET /api/chat HTTP/1.1[0m" 405 -
+2025-04-16 16:59:56,171 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 16:59:56,175 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 16:59:56] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 17:04:43,647 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 17:04:43,648 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 17:04:43,689 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 17:04:44,160 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 17:04:45,692 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 17:04:45,692 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 17:06:47,210 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-16 17:06:47,210 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 17:06:47,213 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 17:06:48,780 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 17:06:48,781 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 17:06:56,858 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:06:56] "GET / HTTP/1.1" 200 -
+2025-04-16 17:06:57,205 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:06:57] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 17:06:57,206 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:06:57] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 17:06:57,215 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:06:57] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 17:07:01,690 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:07:01] "[31m[1mGET /api/chat?message=hi&session_id=session_1744803417 HTTP/1.1[0m" 405 -
+2025-04-16 17:07:07,792 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:07:07] "[31m[1mGET /api/chat?message=hi&session_id=session_1744803417 HTTP/1.1[0m" 405 -
+2025-04-16 17:07:23,772 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:07:23] "GET / HTTP/1.1" 200 -
+2025-04-16 17:07:23,943 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:07:23] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 17:07:23,945 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:07:23] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 17:07:23,960 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:07:23] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 17:07:26,259 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:07:26] "[31m[1mGET /api/chat?message=hi&session_id=session_1744803443 HTTP/1.1[0m" 405 -
+2025-04-16 17:09:10,534 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-16 17:09:10,534 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-16 17:09:10,537 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 17:09:11,998 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 17:09:11,998 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 17:09:14,585 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:09:14] "GET / HTTP/1.1" 200 -
+2025-04-16 17:09:14,873 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:09:14] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 17:09:14,874 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:09:14] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 17:09:14,880 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:09:14] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 17:09:17,350 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b (streaming)
+2025-04-16 17:09:18,646 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 17:09:18,650 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:09:18] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 17:09:50,446 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 17:09:50,446 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 17:09:50,485 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 17:09:50,972 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 17:09:52,494 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 17:09:52,495 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 17:09:53,150 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:09:53] "GET / HTTP/1.1" 200 -
+2025-04-16 17:09:53,344 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:09:53] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 17:09:53,356 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:09:53] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 17:09:53,395 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:09:53] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 17:09:56,195 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 17:09:56,617 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 17:09:56,620 - ollama_chat_app - INFO - Ollama response received in 0.42 seconds
+2025-04-16 17:09:56,621 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:09:56] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 17:09:59,731 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 17:10:00,204 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 17:10:00,205 - ollama_chat_app - INFO - Ollama response received in 0.47 seconds
+2025-04-16 17:10:00,205 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:10:00] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 17:10:07,282 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 17:10:08,283 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 17:10:08,284 - ollama_chat_app - INFO - Ollama response received in 1.00 seconds
+2025-04-16 17:10:08,285 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:10:08] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 17:10:16,442 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 17:10:24,643 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 17:10:24,643 - ollama_chat_app - INFO - Ollama response received in 8.20 seconds
+2025-04-16 17:10:24,644 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:10:24] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 17:10:38,033 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 17:10:38,635 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 17:10:38,635 - ollama_chat_app - INFO - Ollama response received in 0.60 seconds
+2025-04-16 17:10:38,636 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:10:38] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 17:10:47,601 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:10:47] "POST /api/set_model HTTP/1.1" 200 -
+2025-04-16 17:10:53,505 - ollama_chat_app - INFO - Querying Ollama with model: llama3
+2025-04-16 17:10:53,552 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-16 17:10:53,552 - ollama_chat_app - ERROR - Error querying Ollama: Error code: 404 - {'error': {'message': 'model "llama3" not found, try pulling it first', 'type': 'api_error', 'param': None, 'code': None}}
+2025-04-16 17:10:53,553 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:10:53] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 17:11:15,033 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 17:11:15,064 - werkzeug - INFO -  * Detected change in '/home/ritik/Documents/VScode/Chat_With_All/backend.py', reloading
+2025-04-16 17:11:15,473 - werkzeug - INFO -  * Restarting with watchdog (inotify)
+2025-04-16 17:11:17,006 - werkzeug - WARNING -  * Debugger is active!
+2025-04-16 17:11:17,006 - werkzeug - INFO -  * Debugger PIN: 755-912-555
+2025-04-16 17:11:22,433 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:11:22] "GET / HTTP/1.1" 200 -
+2025-04-16 17:11:22,559 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:11:22] "POST /api/init_session HTTP/1.1" 200 -
+2025-04-16 17:11:22,560 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:11:22] "GET /api/models HTTP/1.1" 200 -
+2025-04-16 17:11:22,581 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:11:22] "POST /api/history HTTP/1.1" 200 -
+2025-04-16 17:11:25,610 - ollama_chat_app - INFO - Querying Ollama with model: qwen2.5:1.5b
+2025-04-16 17:11:26,032 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 17:11:26,034 - ollama_chat_app - INFO - Ollama response received in 0.42 seconds
+2025-04-16 17:11:26,035 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:11:26] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 17:11:29,474 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:11:29] "POST /api/set_model HTTP/1.1" 200 -
+2025-04-16 17:11:31,365 - ollama_chat_app - INFO - Querying Ollama with model: llama3.2
+2025-04-16 17:11:37,503 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 17:11:39,378 - ollama_chat_app - INFO - Ollama response received in 8.01 seconds
+2025-04-16 17:11:39,380 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:11:39] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 17:11:57,296 - ollama_chat_app - INFO - Querying Ollama with model: llama3.2
+2025-04-16 17:12:18,930 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 17:12:18,931 - ollama_chat_app - INFO - Ollama response received in 21.63 seconds
+2025-04-16 17:12:18,931 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:12:18] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 17:13:31,036 - ollama_chat_app - INFO - Querying Ollama with model: llama3.2
+2025-04-16 17:13:39,660 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 17:13:39,660 - ollama_chat_app - INFO - Ollama response received in 8.62 seconds
+2025-04-16 17:13:39,661 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:13:39] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 17:14:18,405 - ollama_chat_app - INFO - Querying Ollama with model: llama3.2
+2025-04-16 17:14:25,781 - httpx - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-16 17:14:25,782 - ollama_chat_app - INFO - Ollama response received in 7.38 seconds
+2025-04-16 17:14:25,782 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:14:25] "POST /api/chat HTTP/1.1" 200 -
+2025-04-16 17:14:54,755 - werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 17:14:54] "POST /api/clear_chat HTTP/1.1" 200 -
