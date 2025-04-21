@@ -1,144 +1,214 @@
-# Ollama Chat Application
+# Ollama AI Chat Application
 
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-FFA500?style=for-the-badge&logo=ollama&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-00ADD8?style=for-the-badge&logo=langchain&logoColor=white)
+![Project Logo](https://via.placeholder.com/150) <!-- Replace with your actual logo -->
 
-A versatile chat application powered by Ollama LLMs with support for multiple data sources including Wikipedia, databases, documents, and websites.
+A full-featured chat application that allows you to interact with various AI models through Ollama, supporting multiple data sources including documents, websites, databases, and more.
 
 ## Features
 
-- **Multiple LLM Models**: Supports various Ollama models (qwen2.5, gemma3, codellama, etc.)
-- **Multiple Interaction Modes**:
-  - Direct chat with the LLM
-  - Wikipedia knowledge retrieval
-  - SQL database querying
-  - Document analysis (PDF and Word)
-  - Website content processing
-- **Retrieval Augmented Generation (RAG)**: For document and website content
-- **Conversation Memory**: Maintains chat history context
-- **Real-time Streaming**: Responses streamed as they're generated
-- **Logging**: Comprehensive logging of all interactions
+- 💬 Chat with various Ollama models (llama3, gemma, phi3, qwen)
+- 📚 Multiple source types: Direct Chat, Wikipedia, Database, PDF, Word, Website
+- 🖼️ Multimodal support (image processing)
+- 🧠 Conversation memory and context retention
+- 📊 Database querying capabilities
+- 📄 Document processing (PDF, Word)
+- 🌐 Website content extraction
+- 🔍 Wikipedia integration
+- 🎨 Modern, responsive UI
+
+## Screenshots
+
+### Main Chat Interface
+![Chat Interface](https://via.placeholder.com/600x400?text=Chat+Interface)
+
+### Source Selection
+![Source Selection](https://via.placeholder.com/600x400?text=Source+Selection)
+
+### Document Processing
+![Document Processing](https://via.placeholder.com/600x400?text=Document+Processing)
+
+## Tech Stack
+
+- **Frontend**: HTML5, CSS3, JavaScript, Bootstrap 5
+- **Backend**: Python, Flask
+- **AI Models**: Ollama (llama3, gemma, phi3, qwen)
+- **Database**: SQLite
+- **Document Processing**: PyPDF2, python-docx
+- **Web Scraping**: BeautifulSoup
+- **Vector Storage**: FAISS
+- **LangChain Integration**: For RAG and agent workflows
 
 ## Prerequisites
 
-Before running the application, ensure you have:
+Before you begin, ensure you have met the following requirements:
 
-1. [Ollama](https://ollama.ai) installed and running locally
-2. Required models pulled (e.g., `ollama pull qwen2.5:1.5b`)
-3. Python 3.8 or higher
+- Python 3.8 or higher
+- Ollama installed and running locally ([installation instructions](https://ollama.ai/))
+- Required Python packages (listed in requirements.txt)
+- Node.js (for optional frontend development)
 
 ## Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/ritigit7/Chat-with-all.git
-   cd Chat-with-all
-   ```
+### 1. Clone the repository
 
-2. Create and activate a virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   ```
+```bash
+git clone https://github.com/yourusername/ollama-ai-chat.git
+cd ollama-ai-chat
+```
 
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+### 2. Set up Python environment
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+```
+
+### 3. Install Python dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Download Ollama models
+
+You'll need to download the models you want to use. For example:
+
+```bash
+ollama pull llama3.2
+ollama pull gemma3
+ollama pull phi3
+ollama pull qwen
+```
+
+### 5. Configure the application
+
+Create a `.env` file in the root directory with your configuration:
+
+```ini
+FLASK_ENV=development
+FLASK_APP=app.py
+OLLAMA_API_BASE=http://localhost:11434
+```
 
 ## Usage
 
+### Running the Application
+
 1. Start the Ollama server (if not already running):
-   ```bash
-   ollama serve
-   ```
 
-2. Run the Streamlit application:
-   ```bash
-   streamlit run app.py
-   ```
+```bash
+ollama serve
+```
 
-3. The application will open in your default browser at `http://localhost:8501`
+2. In a separate terminal, start the Flask application:
 
-### Application Interface
+```bash
+flask run
+```
 
-1. **Sidebar Configuration**:
-   - Select your preferred Ollama model
-   - Choose a data source type (Direct Chat, Wikipedia, Database, etc.)
-   - Configure the selected source (e.g., provide database path or document location)
+3. Open your browser and navigate to:
 
-2. **Main Chat Area**:
-   - Type your questions in the chat input
-   - View the conversation history
-   - Responses will be streamed in real-time
-  
-![Chat-With-All](https://github.com/ritigit7/Chat-with-all/blob/main/images/WhatsApp%20Image%202025-03-29%20at%2012.55.47%20AM%20(1).jpeg)
-![Chat-With-All](https://github.com/ritigit7/Chat-with-all/blob/main/images/WhatsApp%20Image%202025-03-29%20at%2012.55.47%20AM%20(2).jpeg)
-![Chat-With-All](https://github.com/ritigit7/Chat-with-all/blob/main/images/WhatsApp%20Image%202025-03-29%20at%2012.55.47%20AM%20(3).jpeg)
-![Chat-With-All](https://github.com/ritigit7/Chat-with-all/blob/main/images/WhatsApp%20Image%202025-03-29%20at%2012.55.47%20AM%20.jpeg)
+```
+http://localhost:5000
+```
 
-## Supported Data Sources
+### Using the Application
 
-### 1. Direct Chat
-Basic chat interface with the selected Ollama model.
+1. **Select a Model**: Choose from the available Ollama models in the sidebar.
+2. **Choose a Source Type**: Select what you want to chat with (direct chat, documents, websites, etc.).
+3. **Configure the Source**: Follow the setup instructions for your selected source type.
+4. **Start Chatting**: Type your message in the input box and press Enter or click Send.
 
-### 2. Wikipedia
-Specialized agent for querying Wikipedia knowledge.
+## Workflow
 
-### 3. Database
-Connect to SQLite databases:
-- The agent will analyze the database schema
-- Generate and execute SQL queries
-- Return results in a readable format
+```mermaid
+graph TD
+    A[User Input] --> B{Source Type}
+    B -->|Direct Chat| C[Query Ollama directly]
+    B -->|Wikipedia| D[Use Wikipedia agent]
+    B -->|Database| E[Query SQL database]
+    B -->|PDF/Word| F[Process document with RAG]
+    B -->|Website| G[Scrape and process content]
+    B -->|Image| G[Scrape and process content]
+    C --> H[Generate Response]
+    D --> H
+    E --> H
+    F --> H
+    G --> H
+    H --> I[Display Response]
+```
 
-### 4. Document Processing
-Supports both PDF and Word documents:
-- Extracts text content
-- Builds a vector store for semantic search
-- Uses RAG for context-aware responses
+## API Endpoints
 
-### 5. Website Processing
-- Fetches and processes website content
-- Builds a vector store for semantic search
-- Uses RAG for context-aware responses
+The backend provides the following API endpoints:
+
+- `POST /api/init_session` - Initialize a new chat session
+- `GET /api/models` - Get available models
+- `POST /api/set_model` - Set the current model
+- `POST /api/set_source` - Set the current source type
+- `POST /api/init_wikipedia` - Initialize Wikipedia agent
+- `POST /api/init_database` - Initialize database connection
+- `POST /api/process_pdf` - Process PDF document
+- `POST /api/process_docx` - Process Word document
+- `POST /api/process_website` - Process website content
+- `POST /api/process_image` - Process image with text prompt
+- `POST /api/chat` - Send chat message
+- `POST /api/history` - Get chat history
+- `POST /api/clear_chat` - Clear chat history
 
 ## Configuration
 
-The application creates several directories automatically:
-- `logs/` - Stores query logs in JSON format
-- `vector_store/` - Stores FAISS vector indexes for documents
+You can configure the application by modifying the following:
 
-## Dependencies
-
-- streamlit
-- ollama
-- langchain
-- langchain-ollama
-- PyPDF2
-- python-docx
-- beautifulsoup4
-- faiss-cpu (or faiss-gpu if you have CUDA)
-- sqlite3 (built-in)
+1. **Models**: Edit the `get_ollama_llm()` function in `app.py` to change default models.
+2. **File Paths**: Update the directory paths at the top of `app.py` to match your system.
+3. **UI**: Modify the HTML/CSS in `templates/index.html` for visual changes.
 
 ## Troubleshooting
 
-1. **Ollama connection issues**:
-   - Ensure Ollama server is running (`ollama serve`)
-   - Verify the model is downloaded (`ollama pull <model-name>`)
+### Common Issues
 
-2. **Document processing errors**:
-   - Check file paths are correct
-   - Ensure documents are not password protected
+1. **Ollama connection errors**:
+   - Ensure Ollama is running (`ollama serve`)
+   - Check that the API base URL is correct (default: `http://localhost:11434`)
 
-3. **Database connection issues**:
-   - Verify the SQLite database exists at the specified path
-   - Check the database is not corrupted
+2. **Model not found**:
+   - Verify you've pulled the model (`ollama pull modelname`)
+   - Check the model name is correct
+
+3. **Document processing failures**:
+   - Ensure the file is not corrupted
+   - Check file permissions
+
+### Logs
+
+The application generates logs in `/logs/chat_app.log`. Check this file for detailed error information.
 
 ## Contributing
 
-Contributions are welcome! Please open an issue or submit a pull request.
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a Pull Request
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Ollama](https://ollama.ai/) for providing the AI models
+- [LangChain](https://www.langchain.com/) for the AI orchestration framework
+- [Flask](https://flask.palletsprojects.com/) for the web framework
+- [Bootstrap](https://getbootstrap.com/) for the UI components
+
+## Contact
+
+For questions or support, please contact:
+
+Your Name - your.email@example.com  
+Project Link: [https://github.com/ritigit7/Chat-with-all](https://github.com/ritigit7/Chat-with-all)
+```
