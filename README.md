@@ -1,7 +1,5 @@
 # Ollama AI Chat Application
 
-![Project Logo](https://via.placeholder.com/150) <!-- Replace with your actual logo -->
-
 A full-featured chat application that allows you to interact with various AI models through Ollama, supporting multiple data sources including documents, websites, databases, and more.
 
 ## Features
@@ -19,12 +17,12 @@ A full-featured chat application that allows you to interact with various AI mod
 ## Screenshots
 
 ### Main Chat Interface
-![Interface](https://github.com/ritigit7/Chat-with-all/blob/main/images/Screenshot%20from%202025-04-21%2017-54-06.png))
-![Interface](https://github.com/ritigit7/Chat-with-all/blob/main/images/Screenshot%20from%202025-04-21%2017-54-10.png))
-![Interface](https://github.com/ritigit7/Chat-with-all/blob/main/images/Screenshot%20from%202025-04-21%2017-54-15.png))
-![Interface](https://github.com/ritigit7/Chat-with-all/blob/main/images/Screenshot%20from%202025-04-21%2017-54-19.png))
-![Interface](https://github.com/ritigit7/Chat-with-all/blob/main/images/Screenshot%20from%202025-04-21%2017-54-22.png))
-![Interface](https://github.com/ritigit7/Chat-with-all/blob/main/images/Screenshot%20from%202025-04-21%2017-54-26.png))
+![Interface](https://github.com/ritigit7/Chat-with-all/blob/main/images/Screenshot%20from%202025-04-21%2017-54-06.png)
+![Interface](https://github.com/ritigit7/Chat-with-all/blob/main/images/Screenshot%20from%202025-04-21%2017-54-10.png)
+![Interface](https://github.com/ritigit7/Chat-with-all/blob/main/images/Screenshot%20from%202025-04-21%2017-54-15.png)
+![Interface](https://github.com/ritigit7/Chat-with-all/blob/main/images/Screenshot%20from%202025-04-21%2017-54-19.png)
+![Interface](https://github.com/ritigit7/Chat-with-all/blob/main/images/Screenshot%20from%202025-04-21%2017-54-22.png)
+![Interface](https://github.com/ritigit7/Chat-with-all/blob/main/images/Screenshot%20from%202025-04-21%2017-54-26.png)
 
 
 ## Tech Stack
