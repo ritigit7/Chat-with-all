@@ -19,13 +19,8 @@ A full-featured chat application that allows you to interact with various AI mod
 ## Screenshots
 
 ### Main Chat Interface
-![Chat Interface](https://via.placeholder.com/600x400?text=Chat+Interface)
+![Interface](images/Screenshot from 2025-04-21 17-54-06.png)
 
-### Source Selection
-![Source Selection](https://via.placeholder.com/600x400?text=Source+Selection)
-
-### Document Processing
-![Document Processing](https://via.placeholder.com/600x400?text=Document+Processing)
 
 ## Tech Stack
 
